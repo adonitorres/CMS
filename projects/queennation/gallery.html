@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/simple-lightbox.css">
+  <link rel="stylesheet" href="css/lightslider.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/lightslider.js"></script>
+	<script src="js/simple-lightbox.jquery.js"></script>
+  <title>Queen Nation - Gallery</title>
+  <script>
+    // this function tells the browser to create the DOM before executing this code
+    $(document).ready(function(){
+      $('.sHidden').lightSlider({
+        // setting new values to default properties
+        gallery:true,
+        item:1,
+        speed:750,
+        auto:true,
+        loop:true,
+        // setting up an event
+        onSliderLoad:function(){
+          $('ul').removeClass('sHidden')
+        } //closes on load event
+      }); //closes lightSlider
+    }); //closes doc ready
+  </script>
+</head>
+<body class="dgallery">
+  <header>
+    <div>
+      <h1>
+        <a href="index.html">
+          <div>Q</div>
+          <div>N</div></a>
+      </h1>
+    </div>
+    <h2>Queen Nation</h2>
+    <a class="menu" href="javascript:;">
+      <div class="hamburger">
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+      </div>
+    </a>
+    <nav>
+      <ul class="global">
+        <li class="nhome"><a href="index.html">Home</a></li>
+        <li class="nlineup"><a href="lineup.html">Line-Up</a></li>
+        <li>&nbsp;</li>
+        <li class="ngallery"><a href="gallery.html">Gallery</a></li>
+        <li class="ncontact"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+		<section class="lightbox1">
+			<a href="img/slider1_lg.jpg" class="big">
+				<img src="img/slider1_sm.jpg" title="Mike McManus playing a guitar solo" alt="Mike McManus playing a guitar solo"></a>
+      <a href="img/slider2_lg.jpg" class="big">
+        <img src="img/slider2_sm.jpg" title="Queen Nation photo with Butterfly" alt="Queen Nation photo with Butterfly"></a>
+      <a href="img/slider3_lg.jpg" class="big">
+        <img src="img/slider3_sm.jpg" title="Peter Burke playing a drums solo" alt="Peter Burke playing a drums solo"></a>
+      <a href="img/slider4_lg.jpg" class="big">
+        <img src="img/slider4_sm.jpg" title="Gregory Finsley Singing" alt="Gregory Finsley Singing"></a>
+      <a href="img/slider5_lg.jpg" class="big">
+        <img src="img/slider5_sm.jpg" title="Gregory Finsley with Mike McManus" alt="Gregory Finsley with Mike McManus"></a>
+      <a href="img/slider6_lg.jpg" class="big">
+        <img src="img/slider6_sm.jpg" title="Gregory Finsley in Freddie Mercury Pose" alt="Gregory Finsley in Freddie Mercury Pose"></a>
+		</section>
+    <div>
+      <ul class="sHidden">
+        <li data-thumb="img/slider1_th.jpg">
+          <img src="img/slider1_lg.jpg" data-tile="guitar solo">
+        </li>
+        <li data-thumb="img/slider2_th.jpg">
+          <img src="img/slider2_lg.jpg" data-tile="butterfly">
+        </li>
+        <li data-thumb="img/slider3_th.jpg">
+          <img src="img/slider3_lg.jpg" data-tile="drums">
+        </li>
+        <li data-thumb="img/slider4_th.jpg">
+          <img src="img/slider4_lg.jpg" data-tile="singing">
+        </li>
+        <li data-thumb="img/slider5_th.jpg">
+          <img src="img/slider5_lg.jpg" data-tile="duet">
+        </li>
+        <li data-thumb="img/slider6_th.jpg">
+          <img src="img/slider6_lg.jpg" data-tile="pose">
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>Join our mailing list for the latest news, tour dates &amp; free tickets</p>
+    <div>
+      <form name="newsletterform" id="newsletterform" method="post" action="newsletterform.php" autocomplete="true">
+        <label for="fname" class="label">First Name</label>
+        <input type="text" name="fname" id="fname" required placeholder="First Name">
+        <label for="lname" class="label">Last Name</label>
+        <input type="text" name="lname" id="lname" required placeholder="Last Name">
+        <label for="email" class="label">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Email">
+        <input type="submit" name="submit" id="submit" value="Submit">
+        <input type="hidden" name="did_send" value="1">
+      </form>
+    </div>
+    <ul>
+      <li><a href="https://www.facebook.com/Queen-Nation-139068526304/" target="_blank"><p>Facebook</p></a></li>
+      <li><a href="https://www.instagram.com/queennationband/" target="_blank"><p>Instagram</p></a></li>
+      <li><a href="https://twitter.com/queennation2013" target="_blank"><p>Twitter</p></a></li>
+      <li><a href="https://www.youtube.com/user/Wix" target="_blank"><p>YouTube</p></a></li>
+    </ul>
+    <div>
+      <a href="https://www.privacypolicies.com/live/59a33f1e-d855-42be-812a-9ac5826e63c5" target="_blank">Privacy Policy</a>
+      <p>&copy;Copyright 2022.</p>
+      <p>All Rights Reserved.</p>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  </footer>
+	<!-- code goes at the end so it won't stop page download -->
+  <script src="js/menu.js"></script>
+  <script src="js/goToTopButton.js"></script>
+	<script>
+		// go find any a tag inside lightbox 1 and attach the method simpleLightbox to them
+		var mylightbox=$('.lightbox1 a').simpleLightbox();
+	</script>
+</body>
+</html>

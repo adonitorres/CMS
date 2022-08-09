@@ -1,0 +1,61 @@
+[24-Jun-2022 10:59:57 America/Chicago] PHP Warning:  include(\home3\adonires\public_html\portfolio\college\lets-play/includes/debug-output.php): failed to open stream: No such file or directory in /home3/adonires/public_html/portfolio/college/lets-play/includes/footer.php on line 3
+[24-Jun-2022 10:59:57 America/Chicago] PHP Warning:  include(\home3\adonires\public_html\portfolio\college\lets-play/includes/debug-output.php): failed to open stream: No such file or directory in /home3/adonires/public_html/portfolio/college/lets-play/includes/footer.php on line 3
+[24-Jun-2022 10:59:57 America/Chicago] PHP Warning:  include(): Failed opening '\home3\adonires\public_html\portfolio\college\lets-play/includes/debug-output.php' for inclusion (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home3/adonires/public_html/portfolio/college/lets-play/includes/footer.php on line 3
+[24-Jun-2022 11:29:29 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'adonires_letsply'@'localhost' to database 'adonires_lets-play' in /home3/adonires/public_html/portfolio/college/lets-play/config.php:70
+Stack trace:
+#0 /home3/adonires/public_html/portfolio/college/lets-play/config.php(70): PDO->__construct('mysql:host=loca...', 'adonires_letspl...', 'QO5*C&f59c,@', Array)
+#1 /home3/adonires/public_html/portfolio/college/lets-play/index.php(2): require('/home3/adonires...')
+#2 {main}
+  thrown in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 70
+[24-Jun-2022 11:29:32 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'adonires_letsply'@'localhost' to database 'adonires_lets-play' in /home3/adonires/public_html/portfolio/college/lets-play/config.php:70
+Stack trace:
+#0 /home3/adonires/public_html/portfolio/college/lets-play/config.php(70): PDO->__construct('mysql:host=loca...', 'adonires_letspl...', 'QO5*C&f59c,@', Array)
+#1 /home3/adonires/public_html/portfolio/college/lets-play/profile.php(2): require('/home3/adonires...')
+#2 {main}
+  thrown in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 70
+[24-Jun-2022 11:29:35 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'adonires_letsply'@'localhost' to database 'adonires_lets-play' in /home3/adonires/public_html/portfolio/college/lets-play/config.php:70
+Stack trace:
+#0 /home3/adonires/public_html/portfolio/college/lets-play/config.php(70): PDO->__construct('mysql:host=loca...', 'adonires_letspl...', 'QO5*C&f59c,@', Array)
+#1 /home3/adonires/public_html/portfolio/college/lets-play/login.php(2): require('/home3/adonires...')
+#2 {main}
+  thrown in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 70
+[24-Jun-2022 11:29:42 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'adonires_letsply'@'localhost' to database 'adonires_lets-play' in /home3/adonires/public_html/portfolio/college/lets-play/config.php:70
+Stack trace:
+#0 /home3/adonires/public_html/portfolio/college/lets-play/config.php(70): PDO->__construct('mysql:host=loca...', 'adonires_letspl...', 'QO5*C&f59c,@', Array)
+#1 /home3/adonires/public_html/portfolio/college/lets-play/index.php(2): require('/home3/adonires...')
+#2 {main}
+  thrown in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 70
+[24-Jun-2022 11:32:03 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'adonires_letsply'@'localhost' to database 'adonires_lets-play' in /home3/adonires/public_html/portfolio/college/lets-play/config.php:70
+Stack trace:
+#0 /home3/adonires/public_html/portfolio/college/lets-play/config.php(70): PDO->__construct('mysql:host=loca...', 'adonires_letspl...', 'QO5*C&f59c,@', Array)
+#1 /home3/adonires/public_html/portfolio/college/lets-play/index.php(2): require('/home3/adonires...')
+#2 {main}
+  thrown in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 70
+[24-Jun-2022 11:32:23 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'adonires_letsply'@'localhost' to database 'adonires_lets-play' in /home3/adonires/public_html/portfolio/college/lets-play/config.php:70
+Stack trace:
+#0 /home3/adonires/public_html/portfolio/college/lets-play/config.php(70): PDO->__construct('mysql:host=loca...', 'adonires_letspl...', 'QO5*C&f59c,@', Array)
+#1 {main}
+  thrown in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 70
+[28-Jun-2022 03:32:28 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'lets-play'@'localhost' (using password: YES) in /home3/adonires/public_html/portfolio/college/lets-play/config.php:70
+Stack trace:
+#0 /home3/adonires/public_html/portfolio/college/lets-play/config.php(70): PDO->__construct('mysql:host=loca...', 'lets-play', '$2y$10$Y64KcY7k...', Array)
+#1 /home3/adonires/public_html/portfolio/college/lets-play/index.php(2): require('/home3/adonires...')
+#2 {main}
+  thrown in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 70
+[28-Jun-2022 03:34:24 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 34
+[28-Jun-2022 03:34:27 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 34
+[28-Jun-2022 03:34:28 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 34
+[28-Jun-2022 03:34:29 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 34
+[28-Jun-2022 03:34:30 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 34
+[28-Jun-2022 03:34:30 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home3/adonires/public_html/portfolio/college/lets-play/config.php on line 34
+[28-Jun-2022 10:12:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:23:57 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:28:19 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:31:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:31:33 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:31:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:31:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:31:50 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:31:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:32:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160
+[28-Jun-2022 10:32:47 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home3/adonires/public_html/portfolio/college/lets-play/includes/header.php:4) in /home3/adonires/public_html/portfolio/college/lets-play/includes/parse-upload.php on line 160

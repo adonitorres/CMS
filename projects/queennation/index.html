@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/lightslider.css" rel="stylesheet">
+  <script src="js/jquery-3.6.0.min.js">
+  </script>
+  <script src="js/lightslider.js">
+  </script>
+  <script>
+      // this function tells the browser to create the DOM before executing this code
+      $(document).ready(function(){
+        $('.sHidden').lightSlider({
+          // setting new values to default properties
+          gallery:true,
+          item:1,
+          speed:750,
+          auto:true,
+          loop:true,
+          // setting up an event
+          onSliderLoad:function(){
+            $('ul').removeClass('sHidden')
+          } //closes on load event
+        }); //closes lightSlider
+      }); //closes doc ready
+  </script>
+  <title>Queen Nation - Home</title>
+</head>
+<body class="dhome">
+  <header>
+    <div>
+      <h1><a href="index.html">
+      <div>
+        Q
+      </div>
+      <div>
+        N
+      </div></a></h1>
+    </div>
+    <h2>Queen Nation</h2><a class="menu" href="javascript:;">
+    <div class="hamburger">
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        &nbsp;
+      </div>
+      <div>
+        &nbsp;
+      </div>
+    </div></a>
+    <nav>
+      <ul class="global">
+        <li class="nhome">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="nlineup">
+          <a href="lineup.html">Line-Up</a>
+        </li>
+        <li>&nbsp;</li>
+        <li class="ngallery">
+          <a href="gallery.html">Gallery</a>
+        </li>
+        <li class="ncontact">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <h2>Join Queen Nation on March 6th for a truly awesome experience!</h2><a href="not-found.html">
+      <div>
+        TICKETS
+      </div></a>
+    </div>
+    <section>
+      <ul>
+        <li>
+          <div>
+            <p>Mar</p>
+            <p>06</p>
+            <p>7:00PM</p>
+          </div>
+          <div>
+            <p>The Magnolia</p>
+            <p>El Cajon, CA</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Mar</p>
+            <p>11</p>
+            <p>7:00PM</p>
+          </div>
+          <div>
+            <p>Grand Theater for the Arts</p>
+            <p>Tracy, CA</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Mar</p>
+            <p>12</p>
+            <p>7:00PM</p>
+          </div>
+          <div>
+            <p>Bourbon Room</p>
+            <p>Los Angeles, CA</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Mar</p>
+            <p>18</p>
+            <p>9:00PM</p>
+          </div>
+          <div>
+            <p>37 Main-A Rock Cafe-Buford</p>
+            <p>Buford, GA</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>Mar</p>
+            <p>19</p>
+            <p>10:00PM</p>
+          </div>
+          <div>
+            <p>Venice Performing Arts Center</p>
+            <p>Venice, FL</p>
+          </div>
+        </li>
+      </ul>
+      <div>
+        &nbsp;
+      </div>
+    </section>
+    <div>
+      <div>
+        &nbsp;
+      </div>
+      <p>BIG THANKS to the good folks of Las Vegas who rocked out with us at the Green Valley Ranch last night! We hope you had as much fun as we did!</p>
+      <div>
+        &nbsp;
+      </div>
+      <p>Packed house last night at the Canyon Club in Agoura last night! Thanks to everyone who came out to our big homecoming dance!</p>
+      <div>
+        &nbsp;
+      </div>
+      <p>We did it again! For the second time, Queen Nation sold out 3 consecutive nights at the world famous Coach House in San Juan Capistrano!</p>
+    </div>
+    <div>
+      <ul class="sHidden">
+        <li data-thumb="img/slider1_th.jpg"><img data-tile="guitar solo" src="img/slider1_lg.jpg"></li>
+        <li data-thumb="img/slider2_th.jpg"><img data-tile="butterfly" src="img/slider2_lg.jpg"></li>
+        <li data-thumb="img/slider3_th.jpg"><img data-tile="drums" src="img/slider3_lg.jpg"></li>
+        <li data-thumb="img/slider4_th.jpg"><img data-tile="singing" src="img/slider4_lg.jpg"></li>
+        <li data-thumb="img/slider5_th.jpg"><img data-tile="duet" src="img/slider5_lg.jpg"></li>
+        <li data-thumb="img/slider6_th.jpg"><img data-tile="pose" src="img/slider6_lg.jpg"></li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    <p>Join our mailing list for the latest news, tour dates &amp; free tickets!</p>
+    <div>
+      <form action="newsletterform.php" autocomplete="true" id="newsletterform" method="post" name="newsletterform">
+        <label class="label" for="fname">First Name</label> <input id="fname" name="fname" placeholder="First Name" required="" type="text"> <label class="label" for="lname">Last Name</label> <input id="lname" name="lname" placeholder="Last Name" required="" type="text"> <label class="label" for="email">Email</label> <input id="email" name="email" placeholder="Email" required="" type="email"> <input id="submit" name="submit" type="submit" value="Submit"> <input name="did_send" type="hidden" value="1">
+      </form>
+    </div>
+    <ul>
+      <li>
+        <a href="https://www.facebook.com/Queen-Nation-139068526304/" target="_blank">
+        <p>Facebook</p></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/queennationband/" target="_blank">
+        <p>Instagram</p></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/queennation2013" target="_blank">
+        <p>Twitter</p></a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/user/Wix" target="_blank">
+        <p>YouTube</p></a>
+      </li>
+    </ul>
+    <div>
+      <a href="https://www.privacypolicies.com/live/59a33f1e-d855-42be-812a-9ac5826e63c5" target="_blank">Privacy Policy</a>
+      <p>&copy;Copyright 2022.</p>
+      <p>All Rights Reserved.</p>
+    </div><button id="topBtn" onclick="topFunction()" title="Go to top">Top</button>
+  </footer>
+  <script src="js/goToTopButton.js">
+  </script> 
+  <script src="js/menu.js">
+  </script>
+</body>
+</html>

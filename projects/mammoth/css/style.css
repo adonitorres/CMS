@@ -1,0 +1,228 @@
+@import url("https://use.typekit.net/bzo8drl.css");
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Open+Sans:wght@300;400&display=swap');
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+body {
+	background: #222222;
+	font-family: verdana, Arial, Helvetica, sans-serif;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+	background: #FFF;
+	border: solid 1px #000;
+}
+
+header {
+	height: 230px;
+	background: url(../images/header_home.jpg) center top/cover;
+}
+.dwinter header {
+	background: url(../images/header_winter.jpg) center top/cover;
+}
+.dsummer header {
+	background: url(../images/header_summer.jpg) center top/cover;
+}
+
+header h1 {
+	text-indent: -9999px;
+}
+header h1 a {
+	display: block;
+	width: 192px;
+	height: 46px;
+	background-image: url(../images/mmlogo.png);
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+}
+nav {
+	background: #0f1a30;
+}
+nav ul {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+}
+nav ul li {
+  width: 100%;
+}
+nav ul li a {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+nav ul li a:link,
+nav ul li a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+  color: #09F;
+  background: #FFF;
+	text-decoration: none;
+}
+/* Nav selected on page */
+.dhome nav ul li.nhome a,
+.dwinter nav ul li.nwinter a,
+.dsummer nav ul li.nsummer a {
+	background: #FFF;
+	color: #000;
+}
+main img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+main {
+	padding: 2%;
+	/* font-family: 'Estonia', cursive; */
+}
+main h2 {
+	line-height: 40px;
+	font-family: pentz-regular, serif;
+	font-weight: 400;
+	font-size: 2rem;
+	font-style: normal;
+}
+section.overflow {
+	height: 300px;
+	overflow: scroll;
+	border: solid 1px red;
+}
+.dwinter main h2 {
+	font-family: 'junctionregular';
+	color: red;
+}
+main h3 {
+	margin: 20px 0 5px;
+	line-height: 40px;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+main p {
+	margin: 5px 3% 20px;
+	font-size: .875rem; /* 14px */
+	line-height: 18px;
+}
+aside h3 {
+	padding: 10px 3% 6px;
+	border-bottom: solid 1px #999;
+}
+aside ul {
+	padding: 0 0 0 6%;
+}
+aside ul li {
+	line-height: 24px;
+	list-style: none;
+	font-weight: bold;
+}
+aside ul li a:link,
+aside ul li a:visited {
+	color: #32528b;
+	text-decoration: none;
+}
+aside ul li a:hover,
+aside ul li a:focus,
+aside ul li a:active {
+	color: #567cc2;
+	text-decoration: none;
+}
+aside img.sponsors {
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+}
+
+footer {
+	min-height: 120px;
+	color: #FFF;
+	background: #525f72;
+}
+
+.social {
+	justify-content: center;
+}
+
+.social a {
+	font-size: 2rem;
+	color: #FFF;
+	margin: 5px;
+}
+
+
+/* Desktop */
+@media screen and (min-width: 900px){
+	body {
+		background: #444444;
+	}
+	.flexwrapper {
+		display: flex;
+	}
+	header h1 a {
+		margin: 0;
+		top: 12px;
+		left: 14px;
+	}
+	nav ul {
+		flex-direction: row;
+		justify-content: left;
+	}
+	nav ul li {
+		width: 110px;
+	}
+	main {
+		width: 67%;
+	}
+	main img {
+		width: 60%;
+		margin: 0 2% 0 0;
+	}
+	aside {
+		width: 33%;
+	}
+	aside img.sponsors {
+		width: 90%;
+	}
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1200px){
+	.container {
+		width: 1200px;
+	}
+	header {
+		height:400px;
+	}
+}
+
+
+@font-face {
+    font-family: 'junctionregular';
+    src: url('Junction-regular-webfont.eot');
+    src: url('Junction-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Junction-regular-webfont.woff2') format('woff2'),
+         url('Junction-regular-webfont.woff') format('woff'),
+         url('Junction-regular-webfont.ttf') format('truetype'),
+         url('Junction-regular-webfont.svg#junctionregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* 
+font-family: 'Estonia', cursive;
+font-family: 'Open Sans', sans-serif;
+
+font-family: pentz-classic,serif;
+font-weight: 500;
+font-style: normal;
+
+font-family: pentz-regular,serif;
+font-weight: 400;
+font-style: normal;
+ */

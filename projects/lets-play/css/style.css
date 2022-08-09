@@ -1,0 +1,1291 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Open+Sans&family=Overlock&family=Overlock+SC&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #2c2c2c;
+  color: #dadada;
+}
+
+header,
+main,
+footer {
+  position: relative;
+}
+
+a {
+  color: #dadada;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: "Nothing You Could Do", cursive;
+}
+
+h4 {
+  font-size: 2.25rem;
+  padding: 1rem 4rem;
+  font-family: "Overlock", cursive;
+  color: #8DA5C3;
+  -webkit-animation: blink 2s ease-in-out infinite;
+          animation: blink 2s ease-in-out infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.5;
+    color: #8DA5C3;
+  }
+  50% {
+    opacity: 1;
+    color: #0f4ff2;
+  }
+  100% {
+    opacity: 0.5;
+    color: #8DA5C3;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+    color: #8DA5C3;
+  }
+  50% {
+    opacity: 1;
+    color: #0f4ff2;
+  }
+  100% {
+    opacity: 0.5;
+    color: #8DA5C3;
+  }
+}
+
+p {
+  padding: 0 2rem 2rem;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+div.feedback.error ul {
+  padding: 0 4rem 2rem 4.5rem;
+  line-height: 1.5rem;
+  color: #5e728b;
+}
+
+header {
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  background-color: #1e1e1e;
+  min-height: 6.25rem;
+  padding: 0.5rem 1.25rem 1rem;
+}
+header a.logo-sm {
+  display: block;
+  background: center/contain no-repeat url(../images/logo_sm_start.png);
+  height: 4.5rem;
+  width: 4.1rem;
+}
+header a.logo-sm:hover, header a.logo-sm:focus {
+  background-image: url(../images/logo_lg_spinning.gif);
+}
+header .main-navigation {
+  padding-top: 1rem;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+header .main-navigation form {
+  justify-content: space-between;
+  gap: 0.5rem;
+  height: 2rem;
+}
+header .main-navigation form label[for=phrase] {
+  position: absolute;
+  left: -999rem;
+}
+header .main-navigation form input[type=search] {
+  width: 100%;
+}
+header .main-navigation ul.profile {
+  width: 50%;
+  align-items: center;
+}
+header .main-navigation ul.profile li {
+  width: 33%;
+  text-align: center;
+  border: solid 1px transparent;
+}
+header .main-navigation ul.profile li div {
+  height: 4rem;
+  padding-top: 0.5rem;
+}
+header .main-navigation ul.profile li:not(:first-of-type) {
+  height: 4rem;
+  padding-top: 0.4rem;
+}
+header .main-navigation ul.profile li:not(:first-of-type) a {
+  line-height: 1.5rem;
+}
+header .main-navigation ul.profile li a {
+  display: block;
+  opacity: 0.5;
+}
+header .main-navigation ul.profile li:hover, header .main-navigation ul.profile li:focus {
+  background-color: #484f5f;
+  border-color: #0f4ff2;
+  box-shadow: 4px 4px 5px #000;
+}
+header .main-navigation ul.profile li:hover a:hover, header .main-navigation ul.profile li:hover a:focus, header .main-navigation ul.profile li:focus a:hover, header .main-navigation ul.profile li:focus a:focus {
+  opacity: 1;
+}
+header h1 {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1.78rem;
+  letter-spacing: 0.25rem;
+}
+header a.hamburger {
+  margin: 0 0 0 auto;
+}
+header a.hamburger div.hamburger ul li {
+  background-color: #dadada;
+  height: 0.5rem;
+  width: 3.6rem;
+  border-radius: 7px;
+  margin: 0.6rem 0;
+}
+header a.hamburger div.hamburger ul li.top {
+  margin-top: 0;
+}
+header a.hamburger div.hamburger ul li.bottom {
+  margin-bottom: 0;
+}
+header ul.main-menu {
+  position: absolute;
+  top: 275px;
+  right: 0;
+  z-index: 10;
+}
+header ul.main-menu li a {
+  display: block;
+  font-family: "Overlock SC", cursive;
+  text-indent: 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: #484f5f;
+  border: solid 2px rgba(94, 114, 139, 0.2509803922);
+  opacity: 0.5;
+}
+header ul.main-menu li a:hover, header ul.main-menu li a:focus {
+  color: white;
+  background-color: #5e728b;
+  border-color: rgba(15, 79, 242, 0.5019607843);
+  opacity: 1;
+}
+
+main {
+  background: top/cover no-repeat url(../images/bg-texture-1-mb.jpg);
+  background-color: #484f5f;
+  background-blend-mode: soft-light;
+}
+main section.hero {
+  background: top/cover no-repeat url(../images/home-hero-mb.webp);
+  background-color: #1e1e1e;
+  background-blend-mode: screen;
+  min-height: 576px;
+}
+main section.hero div.flex {
+  background-color: rgba(0, 0, 0, 0.3137254902);
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3960784314);
+}
+main section.hero p {
+  margin-top: 10rem;
+}
+main section.hero ul {
+  margin-top: 1rem;
+}
+main section.hero ul li {
+  padding: 1rem 0 0.5rem;
+}
+main section.hero > div {
+  width: 75%;
+  padding-top: 2.5rem;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.35rem;
+  letter-spacing: 0.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 4rem;
+  letter-spacing: 0.15rem;
+  text-align: center;
+}
+
+a.button-style {
+  width: 16rem;
+  background-color: #484f5f;
+  border: 2px solid #5e728b;
+  border-radius: 0.5rem;
+  z-index: 2;
+  display: block;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: #dadada;
+  letter-spacing: 0.2rem;
+}
+a.button-style:hover, a.button-style:focus {
+  color: white;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+}
+
+section:not(:first-of-type) h3 {
+  font-size: 2.35rem;
+  padding-top: 1rem;
+}
+section:not(:first-of-type) p:first-of-type {
+  padding-top: 0;
+}
+
+section.about {
+  background: center/cover no-repeat url(../images/bg-texture-1-mb.jpg);
+  background-color: #484f5f;
+  background-blend-mode: soft-light;
+}
+section.about img {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 220px;
+}
+section.about p:nth-of-type(2) {
+  padding-top: 2rem;
+}
+
+section.browse {
+  background: center/cover no-repeat url(../images/bg-texture-1-mb.jpg);
+}
+section.browse h3 {
+  letter-spacing: 0.05rem;
+}
+section.browse ul {
+  justify-content: space-evenly;
+}
+section.browse li {
+  width: 40%;
+  padding: 0 0 2rem;
+}
+section.browse li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 0;
+  border-radius: 1rem;
+}
+section.browse li a:hover span,
+section.browse li a:focus span {
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+section.browse li:first-of-type a {
+  background: center/cover no-repeat url(../images/browse-games-btn.jpg);
+  background-color: #484f5f;
+  background-blend-mode: soft-light;
+}
+section.browse li:first-of-type a:hover, section.browse li:first-of-type a:focus {
+  background-blend-mode: normal;
+}
+section.browse li:last-of-type a {
+  background: center/cover no-repeat url(../images/browse-gm-btn.jpg);
+  background-color: #484f5f;
+  background-blend-mode: soft-light;
+}
+section.browse li:last-of-type a:hover, section.browse li:last-of-type a:focus {
+  background-blend-mode: normal;
+}
+
+section.contact {
+  background: top/cover no-repeat url(../images/bg-texture-1-mb.jpg);
+  background-color: #484f5f;
+  background-blend-mode: soft-light;
+}
+section.contact > p {
+  padding: 0 2rem;
+}
+section.contact form {
+  width: 90%;
+  margin: 0 auto;
+}
+section.contact form div label {
+  position: absolute;
+  left: -999rem;
+}
+section.contact form div input:not([type=submit]) {
+  width: 100%;
+  padding: 0 0 0 2rem;
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+  border: none;
+  background-color: rgba(72, 79, 95, 0.7490196078);
+  border-radius: 0.4rem;
+  margin: 0.5rem 0;
+}
+section.contact form div input:not([type=submit]):hover, section.contact form div input:not([type=submit]):focus {
+  background-color: #5e728b;
+}
+section.contact form div input:not([type=submit]):hover::-moz-placeholder, section.contact form div input:not([type=submit]):focus::-moz-placeholder {
+  color: #1e1e1e;
+}
+section.contact form div input:not([type=submit]):hover:-ms-input-placeholder, section.contact form div input:not([type=submit]):focus:-ms-input-placeholder {
+  color: #1e1e1e;
+}
+section.contact form div input:not([type=submit]):hover::placeholder, section.contact form div input:not([type=submit]):focus::placeholder {
+  color: #1e1e1e;
+}
+section.contact form div.submit {
+  padding: 0.5rem 0 2rem;
+}
+section.contact form div.submit input {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  color: #dadada;
+  letter-spacing: 0.2rem;
+  background-color: #484f5f;
+  border: 2px solid #5e728b;
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  width: 50%;
+}
+section.contact form div.submit input:hover, section.contact form div.submit input:focus {
+  color: #1e1e1e;
+  font-weight: bold;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  box-shadow: 6px 6px 10px #000;
+}
+section.contact form div.policy p {
+  font-size: 1rem;
+  line-height: normal;
+  color: rgba(218, 218, 218, 0.3137254902);
+  padding: 0;
+}
+section.contact form div.policy p a {
+  color: rgba(218, 218, 218, 0.5647058824);
+}
+section.contact form div.policy p a:hover, section.contact form div.policy p a:focus {
+  color: #0f4ff2;
+}
+
+div.login {
+  background: top/cover no-repeat url(../images/bg-texture-1-mb.jpg);
+}
+div.login h2 {
+  text-align: center;
+  line-height: 6rem;
+  padding-top: 1rem;
+}
+div.login p {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  padding-bottom: 1rem;
+}
+div.login form {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+div.login form div label {
+  position: absolute;
+  left: -999rem;
+}
+div.login form div input {
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+}
+div.login form div input:not([type=submit]) {
+  padding: 0 0 0 2rem;
+  background-color: rgba(72, 79, 95, 0.7490196078);
+  border: solid 2px #5e728b;
+  margin: 0.5rem 0;
+}
+div.login form div input:not([type=submit]):hover, div.login form div input:not([type=submit]):focus {
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+}
+div.login form div input:not([type=submit]):hover::-moz-placeholder, div.login form div input:not([type=submit]):focus::-moz-placeholder {
+  color: #1e1e1e;
+}
+div.login form div input:not([type=submit]):hover:-ms-input-placeholder, div.login form div input:not([type=submit]):focus:-ms-input-placeholder {
+  color: #1e1e1e;
+}
+div.login form div input:not([type=submit]):hover::placeholder, div.login form div input:not([type=submit]):focus::placeholder {
+  color: #1e1e1e;
+}
+div.login form div input[type=text] {
+  border-radius: 0.4rem 0.4rem 0 0;
+  margin-bottom: 0;
+}
+div.login form div input[type=password] {
+  border-radius: 0 0 0.4rem 0.4rem;
+  margin-top: 0;
+}
+div.login form div input[type=submit] {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  color: #dadada;
+  letter-spacing: 0.2rem;
+  background-color: #484f5f;
+  border: 2px solid #5e728b;
+  border-radius: 0.5rem;
+  margin: 2rem auto 1rem;
+}
+div.login form div input[type=submit]:hover, div.login form div input[type=submit]:focus {
+  color: #1e1e1e;
+  font-weight: bold;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  box-shadow: 6px 6px 10px #000;
+}
+div.login form a {
+  display: block;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 1.6rem;
+  line-height: 4rem;
+}
+div.login form a:hover, div.login form a:focus {
+  opacity: 1;
+  color: #0f4ff2;
+}
+div.login div[class=flex] {
+  padding-top: 1rem;
+  justify-content: center;
+  background-color: rgba(72, 79, 95, 0.4);
+}
+div.login div[class=flex] p {
+  opacity: 0.5;
+}
+div.login div[class=flex] a {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+div.login div[class=flex] a:hover, div.login div[class=flex] a:focus {
+  opacity: 1;
+  color: #0f4ff2;
+}
+
+main.dregister {
+  padding: 2rem 3rem 2rem;
+}
+main.dregister h2 {
+  font-family: "Overlock", cursive;
+  font-size: 2.4rem;
+}
+main.dregister > p {
+  opacity: 0.75;
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+main.dregister form label {
+  position: absolute;
+  left: -999rem;
+}
+main.dregister form input {
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: 4.2rem;
+}
+main.dregister form input:not([type=submit]) {
+  padding: 0 1rem 0 2rem;
+  background-color: rgba(72, 79, 95, 0.7490196078);
+  border: solid 2px #5e728b;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+}
+main.dregister form input:not([type=submit]):hover, main.dregister form input:not([type=submit]):focus {
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+}
+main.dregister form input:not([type=submit]):hover::-moz-placeholder, main.dregister form input:not([type=submit]):focus::-moz-placeholder {
+  color: #1e1e1e;
+}
+main.dregister form input:not([type=submit]):hover:-ms-input-placeholder, main.dregister form input:not([type=submit]):focus:-ms-input-placeholder {
+  color: #1e1e1e;
+}
+main.dregister form input:not([type=submit]):hover::placeholder, main.dregister form input:not([type=submit]):focus::placeholder {
+  color: #1e1e1e;
+}
+main.dregister form p:first-of-type {
+  padding: 1rem 0 0.5rem 0.5rem;
+}
+main.dregister form p:first-of-type a {
+  display: inline-block;
+  width: 1.75rem;
+  height: 1.75rem;
+  text-align: center;
+  opacity: 0.75;
+  background-color: #484f5f;
+  border: solid 1px #5e728b;
+  border-radius: 50%;
+}
+main.dregister form p:first-of-type a:hover, main.dregister form p:first-of-type a:focus {
+  color: #1e1e1e;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  box-shadow: 6px 6px 12px #000000;
+}
+main.dregister form p {
+  color: rgba(218, 218, 218, 0.3137254902);
+  line-height: 1.5rem;
+  padding: 0.5rem 0 0 0.5rem;
+}
+main.dregister form p a {
+  color: rgba(218, 218, 218, 0.4588235294);
+}
+main.dregister form p a:hover, main.dregister form p a:focus {
+  color: #0f4ff2;
+}
+main.dregister form input[type=submit] {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  color: #dadada;
+  letter-spacing: 0.2rem;
+  background-color: #484f5f;
+  border: 2px solid #5e728b;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+}
+main.dregister form input[type=submit]:hover, main.dregister form input[type=submit]:focus {
+  color: #1e1e1e;
+  font-weight: bold;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  box-shadow: 6px 6px 10px #000;
+}
+
+main.dprofile {
+  padding: 1rem;
+}
+main.dprofile ul.profile-area {
+  flex-direction: column;
+  align-items: center;
+}
+main.dprofile ul.profile-area li.profile-bg {
+  margin: -17px;
+}
+main.dprofile ul.profile-area li.profile-pic {
+  margin-top: -136px;
+}
+main.dprofile ul.profile-area h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  letter-spacing: normal;
+}
+main.dprofile ul.options {
+  grid-template-columns: 4fr 1fr 1fr;
+  gap: 0.5rem;
+  padding: 1rem 0 1rem 0.5rem;
+}
+main.dprofile ul.options li {
+  margin: 0 auto;
+}
+main.dprofile ul.options li.message a {
+  line-height: 2.5rem;
+  font-size: 1rem;
+}
+main.dprofile ul.options li.edit {
+  padding-left: 0.25rem;
+}
+main.dprofile ul.options li.edit a {
+  display: block;
+  height: 2.75em;
+  width: 2.75rem;
+  background: center/contain no-repeat url(../images/edit_profile_icon.svg);
+}
+main.dprofile ul.options li.other a {
+  display: block;
+  height: 2.75em;
+  width: 2.75rem;
+  border-radius: 0.5rem;
+  background-color: #484f5f;
+}
+main.dprofile ul.options li.other a ul {
+  justify-content: space-evenly;
+  align-items: center;
+  height: 2.75em;
+}
+main.dprofile ul.options li.other a ul li {
+  width: 0.4rem;
+  height: 0.4rem;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+}
+main.dprofile > div.grid {
+  width: 50%;
+}
+main.dprofile > div.grid div.one-post {
+  position: relative;
+  opacity: 0.75;
+}
+main.dprofile > div.grid div.one-post:hover, main.dprofile > div.grid div.one-post:focus {
+  opacity: 1;
+}
+main.dprofile > div.grid div.one-post h2 {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: normal;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+main.dprofile > div.grid div.one-post span.type {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  width: 45%;
+}
+main.dprofile > div.grid div.one-post span.date {
+  position: absolute;
+  bottom: 0.5rem;
+  left: -1rem;
+  width: 100%;
+  font-size: 0.9rem;
+  font-style: italic;
+  opacity: 0.75;
+  text-align: right;
+}
+
+main.dadd section.hero {
+  background: top/contain no-repeat url(../images/default_profile_bg.svg);
+  background-color: rgba(0, 0, 0, 0.3137254902);
+  background-blend-mode: darken;
+  min-height: 100px;
+}
+main.dadd section.hero h2:first-of-type {
+  padding-top: 1rem;
+}
+main.dadd section.hero h2:last-of-type {
+  padding-bottom: 1rem;
+}
+main.dadd section.hero h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #dadada;
+  background-color: rgba(0, 0, 0, 0.4588235294);
+  padding: 0.5rem 1rem;
+}
+main.dadd section.hero p {
+  line-height: 3rem;
+  margin-top: 7.5rem;
+  padding: 0;
+  text-align: center;
+}
+main.dadd ul {
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+main.dadd ul li {
+  width: 100%;
+  opacity: 0.75;
+}
+main.dadd ul li:hover, main.dadd ul li:focus {
+  opacity: 1;
+}
+main.dadd ul li a {
+  display: block;
+  min-height: 224px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 14rem;
+  background-color: rgba(0, 0, 0, 0.4588235294);
+}
+main.dadd ul li a:hover, main.dadd ul li a:focus {
+  opacity: 1;
+  box-shadow: 6px 6px 10px #000;
+}
+main.dadd ul li.game {
+  background: center/cover no-repeat url(../images/browse-games-btn.jpg);
+}
+main.dadd ul li.gm {
+  background: center/cover no-repeat url(../images/browse-gm-btn.jpg);
+}
+
+main.dgame {
+  color: rgba(218, 218, 218, 0.4588235294);
+}
+main.dgame section.hero {
+  background: center/cover no-repeat url(../images/browse-games-mb.jpg);
+  background-color: rgba(0, 0, 0, 0.3137254902);
+  background-blend-mode: darken;
+  min-height: 241px;
+}
+main.dgame section.hero h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #dadada;
+  background-color: rgba(0, 0, 0, 0.4588235294);
+}
+main.dgame h2 {
+  text-align: center;
+  line-height: 4rem;
+  font-weight: bold;
+}
+main.dgame form {
+  flex-direction: column;
+  padding: 0 2rem 1rem;
+  gap: 1rem;
+}
+main.dgame form label:not([for=uploadedfile]) {
+  position: absolute;
+  left: -999rem;
+}
+main.dgame form label {
+  color: rgba(218, 218, 218, 0.4588235294);
+  font-size: 0.9rem;
+  text-indent: 0.5rem;
+}
+main.dgame form input, main.dgame form select, main.dgame form textarea {
+  background-color: #484f5f;
+  border: solid 1px #5e728b;
+  border-radius: 4px;
+  padding: 0 0.3rem;
+  color: rgba(218, 218, 218, 0.4588235294);
+  font-size: 1rem;
+}
+main.dgame form input:hover, main.dgame form input:focus, main.dgame form select:hover, main.dgame form select:focus, main.dgame form textarea:hover, main.dgame form textarea:focus {
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  color: #dadada;
+}
+main.dgame form input:hover::-moz-placeholder, main.dgame form input:focus::-moz-placeholder, main.dgame form select:hover::-moz-placeholder, main.dgame form select:focus::-moz-placeholder, main.dgame form textarea:hover::-moz-placeholder, main.dgame form textarea:focus::-moz-placeholder {
+  color: #dadada;
+}
+main.dgame form input:hover:-ms-input-placeholder, main.dgame form input:focus:-ms-input-placeholder, main.dgame form select:hover:-ms-input-placeholder, main.dgame form select:focus:-ms-input-placeholder, main.dgame form textarea:hover:-ms-input-placeholder, main.dgame form textarea:focus:-ms-input-placeholder {
+  color: #dadada;
+}
+main.dgame form input:hover::placeholder, main.dgame form input:focus::placeholder, main.dgame form select:hover::placeholder, main.dgame form select:focus::placeholder, main.dgame form textarea:hover::placeholder, main.dgame form textarea:focus::placeholder {
+  color: #dadada;
+}
+main.dgame form input[type=file] {
+  margin: -0.6rem auto 0;
+  font-size: 0.9rem;
+  width: 100%;
+}
+main.dgame form input {
+  line-height: 2rem;
+}
+main.dgame form input[type=submit] {
+  width: 16rem;
+  background-color: #484f5f;
+  border: 2px solid #5e728b;
+  border-radius: 0.5rem;
+  z-index: 2;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+main.dgame form input[type=submit]:hover, main.dgame form input[type=submit]:focus {
+  color: white;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+}
+main.dgame form select {
+  height: 2rem;
+}
+main.dgame form textarea {
+  padding: 0.5rem;
+  resize: none;
+}
+
+main.dgm {
+  color: rgba(218, 218, 218, 0.4588235294);
+}
+main.dgm section.hero {
+  background: center/cover no-repeat url(../images/browse-gm-mb.jpg);
+  background-color: rgba(0, 0, 0, 0.3137254902);
+  background-blend-mode: darken;
+  min-height: 241px;
+}
+main.dgm section.hero h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.75rem;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #dadada;
+  background-color: rgba(0, 0, 0, 0.4588235294);
+}
+main.dgm h2 {
+  text-align: center;
+  line-height: 4rem;
+  font-weight: bold;
+}
+main.dgm form {
+  flex-direction: column;
+  padding: 0 2rem 1rem;
+  gap: 1rem;
+}
+main.dgm form label:not([for=uploadedfile]) {
+  position: absolute;
+  left: -999rem;
+}
+main.dgm form label {
+  color: rgba(218, 218, 218, 0.4588235294);
+  font-size: 0.9rem;
+  text-indent: 0.5rem;
+}
+main.dgm form input, main.dgm form select, main.dgm form textarea {
+  background-color: #484f5f;
+  border: solid 1px #5e728b;
+  border-radius: 4px;
+  padding: 0 0.3rem;
+  color: rgba(218, 218, 218, 0.4588235294);
+  font-size: 1rem;
+}
+main.dgm form input:hover, main.dgm form input:focus, main.dgm form select:hover, main.dgm form select:focus, main.dgm form textarea:hover, main.dgm form textarea:focus {
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  color: #dadada;
+}
+main.dgm form input:hover::-moz-placeholder, main.dgm form input:focus::-moz-placeholder, main.dgm form select:hover::-moz-placeholder, main.dgm form select:focus::-moz-placeholder, main.dgm form textarea:hover::-moz-placeholder, main.dgm form textarea:focus::-moz-placeholder {
+  color: #dadada;
+}
+main.dgm form input:hover:-ms-input-placeholder, main.dgm form input:focus:-ms-input-placeholder, main.dgm form select:hover:-ms-input-placeholder, main.dgm form select:focus:-ms-input-placeholder, main.dgm form textarea:hover:-ms-input-placeholder, main.dgm form textarea:focus:-ms-input-placeholder {
+  color: #dadada;
+}
+main.dgm form input:hover::placeholder, main.dgm form input:focus::placeholder, main.dgm form select:hover::placeholder, main.dgm form select:focus::placeholder, main.dgm form textarea:hover::placeholder, main.dgm form textarea:focus::placeholder {
+  color: #dadada;
+}
+main.dgm form input[type=file] {
+  margin: -0.6rem auto 0;
+  font-size: 0.9rem;
+  width: 100%;
+}
+main.dgm form input {
+  line-height: 2rem;
+}
+main.dgm form input[type=submit] {
+  width: 16rem;
+  background-color: #484f5f;
+  border: 2px solid #5e728b;
+  border-radius: 0.5rem;
+  z-index: 2;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+main.dgm form input[type=submit]:hover, main.dgm form input[type=submit]:focus {
+  color: white;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+}
+main.dgm form select {
+  height: 2rem;
+}
+main.dgm form textarea {
+  padding: 0.5rem;
+  resize: none;
+}
+
+div.post {
+  position: relative;
+  padding: 1rem 2rem;
+  color: rgba(218, 218, 218, 0.4588235294);
+}
+div.post img.post-image {
+  border-radius: 10px;
+  width: 100%;
+  border: solid 1px #484f5f;
+}
+div.post a {
+  opacity: 0.75;
+}
+div.post a.join-game {
+  width: 16rem;
+  background-color: #484f5f;
+  border: 2px solid #5e728b;
+  border-radius: 0.5rem;
+  z-index: 2;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.75rem 2.5rem;
+  margin: -2.5rem auto 0;
+  position: relative;
+  top: -3rem;
+  text-align: center;
+  opacity: 1;
+}
+div.post a.join-game:hover, div.post a.join-game:focus {
+  color: white;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+}
+div.post a.edit {
+  position: absolute;
+  right: 3rem;
+  padding: 0.5rem 0;
+  -webkit-animation: blink 1s ease-in-out infinite;
+          animation: blink 1s ease-in-out infinite;
+}
+div.post a.edit:hover, div.post a.edit:focus {
+  opacity: 1;
+}
+div.post span.date {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  font-style: italic;
+  line-height: 2rem;
+}
+div.post section.info {
+  grid-template-areas: "campaign-name session-day" "game-name session-date" "gm add-calendar" "type location" "oneshot location" "sessions players" "details details";
+}
+div.post section.info h2, div.post section.info h3 {
+  font-family: "Overlock", cursive;
+  letter-spacing: normal;
+  text-align: left;
+}
+div.post section.info h2, div.post section.info h3,
+div.post section.info p:nth-of-type(1),
+div.post section.info p:nth-of-type(2),
+div.post section.info p:nth-of-type(3),
+div.post section.info p:nth-of-type(4) {
+  width: 160%;
+}
+div.post section.info h2 {
+  grid-area: campaign-name;
+  font-size: 2rem;
+  color: #dadada;
+  opacity: 0.8;
+}
+div.post section.info h3 {
+  grid-area: game-name;
+  font-size: 1.5rem;
+  line-height: normal;
+}
+div.post section.info p {
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+div.post section.info p:nth-of-type(1) {
+  grid-area: gm;
+  color: #dadada;
+  line-height: 3rem;
+  opacity: 0.8;
+}
+div.post section.info p:nth-of-type(2) {
+  grid-area: type;
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+div.post section.info p:nth-of-type(3) {
+  grid-area: oneshot;
+  line-height: normal;
+  font-size: 0.9rem;
+}
+div.post section.info p:nth-of-type(4) {
+  grid-area: sessions;
+  font-size: 0.75rem;
+  line-height: normal;
+  font-style: italic;
+}
+div.post section.info p:nth-of-type(5), div.post section.info a,
+div.post section.info p:nth-of-type(6),
+div.post section.info p:nth-of-type(7),
+div.post section.info p:nth-of-type(8) {
+  margin-left: 10rem;
+  width: 48%;
+}
+div.post section.info p:nth-of-type(5) {
+  grid-area: session-day;
+  color: #dadada;
+  opacity: 0.8;
+}
+div.post section.info p:nth-of-type(6) {
+  grid-area: session-date;
+  line-height: 1rem;
+  color: #dadada;
+  opacity: 0.8;
+}
+div.post section.info a {
+  display: block;
+  grid-area: add-calendar;
+  color: #0f4ff2;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
+  margin-top: -0.5rem;
+}
+div.post section.info a:hover, div.post section.info a:focus {
+  opacity: 1;
+}
+div.post section.info p:nth-of-type(7) {
+  grid-area: location;
+  font-size: 0.9rem;
+  line-height: normal;
+  margin-top: -1rem;
+}
+div.post section.info p:nth-of-type(8) {
+  grid-area: players;
+  margin-top: -1rem;
+}
+div.post section.info p:nth-of-type(8) > span span {
+  color: #dadada;
+}
+div.post section.info p:nth-of-type(9) {
+  grid-area: details;
+  border-top: solid 1px #5e728b;
+}
+
+span.comment-cta {
+  display: block;
+  padding: 1rem 2rem;
+  color: rgba(218, 218, 218, 0.4588235294);
+}
+span.comment-cta a {
+  opacity: 0.6;
+}
+span.comment-cta a:hover, span.comment-cta a:focus {
+  color: #dadada;
+  font-weight: bold;
+  opacity: 1;
+}
+
+section.comment-form,
+section.comments {
+  padding: 1rem 2rem;
+  color: rgba(218, 218, 218, 0.4588235294);
+}
+section.comment-form h2,
+section.comments h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: normal;
+  line-height: 2rem;
+}
+
+section.comment-form form {
+  flex-direction: column;
+  gap: 1rem;
+}
+section.comment-form form textarea {
+  background-color: #484f5f;
+  border: solid 1px #5e728b;
+  border-radius: 4px;
+  padding: 0.5rem;
+  resize: none;
+  color: rgba(218, 218, 218, 0.4588235294);
+  font-size: 1rem;
+}
+section.comment-form form textarea:hover, section.comment-form form textarea:focus {
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  color: #dadada;
+}
+section.comment-form form textarea:hover::-moz-placeholder, section.comment-form form textarea:focus::-moz-placeholder {
+  color: #dadada;
+}
+section.comment-form form textarea:hover:-ms-input-placeholder, section.comment-form form textarea:focus:-ms-input-placeholder {
+  color: #dadada;
+}
+section.comment-form form textarea:hover::placeholder, section.comment-form form textarea:focus::placeholder {
+  color: #dadada;
+}
+section.comment-form form input[type=submit] {
+  width: 16rem;
+  background-color: #484f5f;
+  border: 2px solid #5e728b;
+  border-radius: 0.5rem;
+  z-index: 2;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+section.comment-form form input[type=submit]:hover, section.comment-form form input[type=submit]:focus {
+  color: white;
+  background-color: #5e728b;
+  border-color: #0f4ff2;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+}
+
+div.posting {
+  grid-template-areas: "pic title title dates" "pic gm gm type" "pic description description description" "pic description description description" "pic time time time";
+  gap: 1rem;
+  margin: 0 1rem 0.5rem;
+  opacity: 0.75;
+  border-radius: 8px;
+  background-color: rgba(218, 218, 218, 0.1450980392);
+}
+div.posting:hover, div.posting:focus {
+  opacity: 1;
+}
+div.posting a {
+  display: block;
+  grid-area: pic;
+  margin-right: -3rem;
+}
+div.posting a img.post-image {
+  display: block;
+  width: 160px;
+  height: 160px;
+}
+div.posting h2 {
+  grid-area: title;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+div.posting p {
+  padding: 0;
+  font-size: 1rem;
+  line-height: normal;
+  margin-top: -1rem;
+}
+div.posting p:nth-of-type(1) {
+  grid-area: dates;
+  text-align: right;
+  margin-top: 0;
+  padding: 0.5rem 1rem 0.5rem 0;
+}
+div.posting p:nth-of-type(2) {
+  grid-area: gm;
+  padding-left: 0.5rem;
+}
+div.posting p:nth-of-type(3) {
+  grid-area: type;
+  text-align: right;
+  padding: 0.5rem 1rem 0 0;
+}
+div.posting p:nth-of-type(4) {
+  grid-area: description;
+  padding-left: 0.5rem;
+}
+div.posting span.date {
+  grid-area: time;
+  padding: 0 0 0.5rem 0.5rem;
+}
+
+footer {
+  background: center/cover no-repeat url(../images/bg-texture-2-mb.jpg);
+  padding: 0 2rem;
+}
+footer div.social-media ul {
+  justify-content: space-evenly;
+}
+footer div.social-media ul li {
+  padding: 2rem 1rem 1rem;
+}
+footer div.social-media ul li a {
+  font-size: 4rem;
+  color: #dadada;
+  opacity: 0.5;
+}
+footer div.social-media ul li a:hover, footer div.social-media ul li a:focus {
+  opacity: 1;
+}
+footer nav.bottomnav > ul {
+  flex-wrap: wrap;
+  gap: 0 2rem;
+}
+footer nav.bottomnav > ul > ul {
+  width: 45%;
+}
+footer nav.bottomnav > ul li a {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 3.5rem;
+  opacity: 0.75;
+}
+footer nav.bottomnav > ul li a:hover, footer nav.bottomnav > ul li a:focus {
+  opacity: 1;
+  text-shadow: 8px 8px 6px #000;
+}
+footer nav.bottomnav > ul li:not(:first-of-type) {
+  width: 100%;
+}
+footer nav.bottomnav > ul li:not(:first-of-type) a {
+  font-family: "Open Sans", sans-serif;
+}
+footer nav.bottomnav > ul li.dsupport a,
+footer nav.bottomnav > ul li.dbrowse a,
+footer nav.bottomnav > ul li.dpolicy a {
+  font-family: "Overlock SC", cursive;
+  font-size: 2.75rem;
+  line-height: 4rem;
+}
+footer nav.bottomnav > ul li.dhome:first-of-type {
+  width: 100%;
+}
+footer nav.bottomnav > ul li.dhome:first-of-type a {
+  display: block;
+  font-size: 3rem;
+  line-height: 6rem;
+  font-family: "Nothing You Could Do", cursive;
+  text-align: center;
+}
+footer nav.bottomnav > ul li.logo-lg {
+  width: 100%;
+  padding: 2rem 0;
+}
+footer nav.bottomnav > ul li.logo-lg a {
+  background: center/contain no-repeat url(../images/logo_lg_spinning.gif);
+  display: block;
+  min-height: 288px;
+  text-indent: -999rem;
+}
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: normal;
+  opacity: 0.35;
+}/*# sourceMappingURL=style.css.map */

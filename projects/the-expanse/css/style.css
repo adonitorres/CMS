@@ -1,0 +1,543 @@
+/* Global Style Start*/
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+  /* this keeps padding and border from adding to element width */
+
+@font-face {
+    font-family: 'yantramanav';
+    src: url(fonts/yantramanav-regular-webfont.woff2) format('woff2'), url(fonts/yantramanav-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'protomolecule';
+    src: url(fonts/protomolecule.woff2) format('woff2'), url(fonts/Protomolecule.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+a:link {
+    color: #06F;
+    text-decoration: none;
+    cursor: url(../images/cursor_link.png), default;
+}
+
+a:visited {
+    color: #015183;
+}
+
+/* Global Style for Navigation Buttons */
+.global {
+    text-align: center;
+}
+
+.global ul li {
+    display: inline;
+    font-size: 16px;
+}
+
+#home_global_nav_header.global ul li, 
+#interior_global_nav_header.global ul li, 
+#content_footer.global #global_nav_footer ul li {
+    font-family: 'protomolecule';
+}
+
+/* Borders for Global Navigation Buttons */
+.outerborder_global {
+    border: solid 2px #7D8188;
+    border-radius: 2px;
+    padding: 11px 0;
+}
+
+.middleborder_global {
+    background-color: #84A2C6;
+    border-radius: 1px;
+    margin: 2px;
+    padding: 9px 2px;
+}
+
+.innerborder_global {
+    background-color: #111A5C;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 6px 12px;
+    color: #84A2C6;
+    text-decoration: none;
+}
+
+.gcurrent, .innerborder_global:hover {
+    background-color: #1F6CC6;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 6px 12px;
+    color: #C3C9D2;
+    text-decoration: none;
+}
+
+.gcurrent:active, .innerborder_global:active {
+    background-color: #C3C9D2;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 6px 12px;
+    color: #1F6CC6;
+    text-decoration: none;
+}
+
+/* Borders for Local Navigation Buttons */
+.outerborder_local {
+    display: inline-block;
+    border: solid 2px #7D8188;
+    border-radius: 2px;
+}
+
+.middleborder_local {
+    display: inline-block;
+    background-color: #5A5240;
+    border-radius: 1px;
+    margin: 2px;
+    padding: 2px;
+}
+
+.innerborder_local {
+    background-color: #660C26;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 16.5px 0 18px 0;
+    color: #DEB55A;
+    text-decoration: none;
+}
+
+.lcurrent, .innerborder_local:hover {
+    background-color: #891031;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 16.5px 0 18px;
+    color: #DEB55A;
+    text-decoration: none;
+}
+
+.lcurrent:active, .innerborder_local:active {
+    background-color: #DEB55A;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 16.5px 0 18px;
+    color: #891031;
+    text-decoration: none;
+}
+
+.button_interior1 {
+    display: inline-block;
+    height: 58px;
+    width: 88px;
+    padding: 6px 0 0 0;
+    vertical-align: middle;
+}
+
+.button_interior2 {
+    display: inline-block;
+    height: 58px;
+    width: 88px;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+body {
+    font-family: 'yantramanav';
+    font-size: 20px;
+    color: #A8A8A8;
+    margin: 18px auto 0;
+    background-color: #737380;
+    background-image: url(../images/bg_space_pattern.jpg);
+    cursor: url(../images/cursor.png), default;
+}
+/* Global Style End */
+
+/* Header Style Start */
+#home_logo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#interior_logo {
+    width: 304px;
+}
+
+#home_global_nav_header {
+    margin: 35px auto 35px;
+    padding: 0px;
+}
+
+#interior_global_nav_header {
+    position: relative;
+    top: -72px;
+    left: 330px;
+    width: 620px;
+}
+
+#interior_local_nav_header {
+    position: relative;
+    left: 305px;
+    top: -50px;
+    width: 642px;
+}
+
+.offscreen {
+    text-indent: -9999px;
+}
+
+#featured {
+    width: 945px;
+    height: 742px;
+    background-repeat: no-repeat;
+    background-image: url(../images/home_main_img_primary.png);
+    background-position-y: 205px;
+}
+
+#featured h1 {
+    position: relative;
+    top: 440px;
+    left: 50px;
+    font-family: 'protomolecule';
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0 auto;
+}
+
+#history #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/history_main_solar_system.png);
+    background-position-y: 150px;
+}
+
+#overview #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/overview_main_stars.png);
+    background-position-y: 150px;
+}
+
+#storyline #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/storyline_main_img_solarsystem.png);
+    background-position-y: 150px;
+}
+
+#factions #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/factions_main_img_slang.png);
+    background-position-y: 150px;
+}
+
+#un #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/un_main_img_flag.png);
+    background-position-y: 150px;
+}
+
+#mcr #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/mcr_main_img_flag.png);
+    background-position-y: 150px;
+}
+
+#opa #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/opa_main_img_flag.png);
+    background-position-y: 150px;
+}
+
+#unknown #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/unknown_main_img_firstring.png);
+    background-position-y: 150px;
+}
+
+#characters #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/characters_main_img_crew.png);
+    background-position-y: 150px;
+}
+
+#holden #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/holden_main_img.png);
+    background-position-y: 150px;
+}
+
+#nagata #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/nagata_main_img.png);
+    background-position-y: 150px;
+}
+
+#burton #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/burton_main_img.png);
+    background-position-y: 150px;
+}
+
+#kamal #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/kamal_main_img.png);
+    background-position-y: 150px;
+}
+
+#avasarala #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/avasarala_main_img.png);
+    background-position-y: 150px;
+}
+
+#draper #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/draper_main_img.png);
+    background-position-y: 150px;
+}
+
+#seasons #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/seasons_main_img_sun.png);
+    background-position-y: 150px;
+}
+
+#season1, #season2, #season3, #season4, #season5, #season6 {
+    margin: -60px auto 0;
+}
+
+#technology #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/technology_main_img_eye.png);
+    background-position-y: 150px;
+}
+
+#vehicles #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/vehicles_main_img.png);
+    background-position-y: 150px;
+}
+
+#weaponry #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/weaponry_main_img.png);
+    background-position-y: 150px;
+}
+
+#personal #featured {
+    width: 945px;
+    height: 675px;
+    background-repeat: no-repeat;
+    background-image: url(../images/personal_main_img.png);
+    background-position-y: 150px;
+}
+
+h1 {
+    text-shadow: 0 0 1em #282828, 0 0 0.2em #282828;
+	/* -webkit-text-stroke: 1px #8F8F8F; */
+	/* text-shadow: 0px 4px 4px #282828; */
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+/* Header Style End */
+
+/* Main Style Start */
+
+#home_content_main {
+    margin: 16px auto;
+    width: 880px;
+    padding: 8px 16px;
+    line-height: 42px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 7px #000;
+    border-radius: 4px;
+    z-index: -3;
+}
+
+#home_content_main_img_sub {
+    position: relative;
+    bottom: 128px;
+    left: 360px;
+    margin: -100px 0 -155px auto;
+    z-index: 1;
+}
+
+#interior_content_main {
+    margin: 16px auto 32px;
+    width: 880px;
+    padding: 8px 16px;
+    line-height: 42px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 7px #000;
+    border-radius: 4px;
+}
+
+#interior_graphic_sub1, #interior_graphic_sub3 {
+    float: right;
+    object-fit: contain;
+    margin: 8px auto 8px 8px;
+}
+
+#interior_graphic_sub2, #interior_graphic_sub4 {
+    float: left;
+    object-fit: contain;
+    margin: 16px 8px 8px auto;
+}
+
+#interior_content_main p a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Main Style End */
+
+/* Footer Style Start */
+
+#content_footer {
+    flex-direction: column;
+    margin: 0 auto 16px;
+}
+
+#footer_nav_local {
+    margin: 0 auto -16px;
+}
+
+#global_nav_footer {
+    margin: 35px auto 35px;
+}
+
+#socialmedia {
+    margin: 0 auto 16px;
+}
+
+#socialmedia ul li {
+    margin: 6px;
+}
+
+#copyright {
+    margin: 0 auto 32px;
+    font-size: 12px;
+    color: #A8A8A8;
+}
+
+#footer_img {
+    background-image: url(../images/home_footer_img_primary.png);
+    position: fixed;
+    bottom: 0;
+    height: 466px;
+    width: 960px;
+    z-index: -25;
+}
+/* Footer Style End */
+
+/* Return to Top Button Style Start */
+
+.outerborder_button {
+    border: solid 2px #7D8188;
+    border-radius: 2px;
+    padding: 13px 0;
+    position: fixed;
+    right: 5%;
+    bottom: 50px;
+    width: 135px;
+    height: 51px;
+    white-space: nowrap;
+}
+
+.middleborder_button {
+    background-color: #84A2C6;
+    border-radius: 1px;
+    margin: 2px;
+    padding: 9px 2px;
+    position: relative;
+}
+
+.innerborder_button {
+    background-color: #111A5C;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 6px 12px;
+    color: #84A2C6;
+    text-decoration: none;
+    position: relative;
+}
+
+.innerborder_button:hover {
+    background-color: #1F6CC6;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 6px 12px;
+    color: #C3C9D2;
+    text-decoration: none;
+    position: relative;
+    animation: glow 500ms ease-in-out infinite alternate;
+}
+
+.innerborder_button:active {
+    background-color: #C3C9D2;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding: 6px 12px;
+    color: #1F6CC6;
+    text-decoration: none;
+    position: relative;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px 2px #1F6CC6;
+    }
+
+    100% {
+        box-shadow: 0 0 10px 10px #1F6CC6;
+    }
+}
+/* Return to Top Button Style End */
+
+/* border: solid 1px red; */

@@ -1,0 +1,615 @@
+/* --------------------------- Global Style Start ---------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* this keeps padding and border from adding to element width */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.875rem;
+    background: #4F3C2F;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background: #FFDD7F;
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.75rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 15px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+ul.flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.flex > ul li + p {
+    text-align: right;
+    margin-bottom: 0;
+}
+
+ul.flex > ul li:last-of-type + p {
+    margin-bottom: 7.5px;
+}
+
+/* --------------------------- Global Style End ---------------------------*/
+
+/* --------------------------- Header Style Start ---------------------------*/
+
+header {
+    height: 600px;
+    width: 960px;
+    position: relative;
+    z-index: 1;
+    background: url(../img/cheers-today.jpg) center top/1460px;
+}
+
+.search {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+	color: #F39C29;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+    opacity: 75%;
+    border-radius: 3px;
+}
+
+.search p {
+    color: #000;
+    text-indent: -9999rem;
+}
+
+.search:hover {
+    width: fit-content;
+}
+
+.search:hover p {
+    position: relative;
+    top: -24px;
+    text-indent: 0;
+    color: #000;
+    background: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 1rem;
+    padding: 6px;
+    border: solid 1px #333;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px #333;
+}
+
+header h1 a {
+    display: block;
+    width: 576px;
+    height: 228px;
+    background: no-repeat url(../img/cheers-logo.png);
+    margin: 0 auto;
+    position: relative;
+}
+
+.dabout header {
+    background: url(../img/beacon-banner.jpg) center top/cover;
+}
+
+.dmenu_home header {
+    background: url(../img/UnionUndergroundMVT-842x474-e1552496146584.jpg) center 83%/cover;
+}
+
+.dfood header {
+    background: url(../img/menu-banner.jpg) center top/cover;
+}
+
+.dalcohol header {
+    background: url(../img/DirtyDraft_Social.jpg) center top/cover;
+}
+
+.dcontact header {
+    background: url(../img/contact-banner.png) center top/cover;
+}
+
+.dmenu_home header, 
+.dfood header, 
+.dalcohol header, 
+.dcontact header, 
+.dabout header, 
+.dspecials header {
+    height: 200px;
+}
+
+.dmenu_home header h1 a, 
+.dfood header h1 a , 
+.dalcohol header h1 a , 
+.dcontact header h1 a , 
+.dabout header h1 a, 
+.dspecials header h1 a {
+    transform: scale(50%);
+    top: -30px;
+    left: -310px;
+}
+
+ul.topmenu {
+    position: absolute;
+    top: 35.15rem;
+    width: 100%;
+    height: 2.35rem;
+    justify-content: center;
+    align-items: stretch;
+    gap: 16px;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.dmenu_home ul.topmenu, 
+.dabout ul.topmenu, 
+.dalcohol ul.topmenu, 
+.dcontact ul.topmenu, 
+.dfood ul.topmenu {
+    margin: 21px auto;
+    top: 8.8rem;
+}
+
+ul.topmenu li {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    border-radius: 5px 5px 0 0;
+}
+
+ul.topmenu li a {
+    display: block;
+    color: #F39C29;
+}
+
+ul.topmenu li a:hover, 
+ul.topmenu li ul.submenu li a, 
+ul.topmenu li ul.submenu li:hover a {
+    color: #F39C29;
+}
+
+/* nav selected on page */
+.dhome nav ul li.nhome a, 
+.dabout nav ul li.nabout > a, 
+.dmenu_home nav ul li.nmenu_home > a,
+.dfood nav ul li.nmenu_home > a, 
+.dalcohol nav ul li.nmenu_home > a, 
+.dcontact nav ul li.ncontact > a {
+	color: #F39C29;
+    background: #FFDD7F;
+    border-radius: 5px;
+    padding: 0 12px 10px;
+}
+
+/* Dropdown menu styling */
+header h1 {
+	text-indent: -9999px;
+}
+
+ul.submenu {
+    position: absolute;
+    top: 2.35rem;
+    left: -9999rem;
+    width: fit-content;
+    background: #FFDD7F;
+    padding: 0 12px 3px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+ul.submenu li {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    padding: 0 12px 4px;
+    border-radius: 0;
+}
+
+ul.topmenu li:hover ul.submenu {
+    top: 2.35rem;
+    left: 23.95rem;
+    padding: 0;
+}
+
+.dmenu_home ul.topmenu li:hover ul.submenu, 
+.dfood ul.topmenu li:hover ul.submenu, 
+.dalcohol ul.topmenu li:hover ul.submenu, 
+.dabout ul.topmenu li:hover ul.submenu, 
+.dcontact ul.topmenu li:hover ul.submenu {
+    left: 23.25rem;
+    background: rgba(255, 221, 127);
+}
+
+ul.topmenu li:hover ul.submenu li {
+    position: relative;
+    top: 0;
+}
+
+ul.topmenu li ul.submenu li:hover a {
+    position: relative;
+    color: #D85904;
+    background: rgba(216, 16, 4, 0.2);
+    padding: 0 12px;
+    margin: 0 -12px;
+}
+
+ul.topmenu li ul.submenu li:hover a.special {
+    padding: 0 12px 4px;
+    margin: 0 -12px -4px;
+}
+
+/* --------------------------- Header Style End ---------------------------*/
+
+/* --------------------------- Main Style Start ---------------------------*/
+
+.dhome main {
+    height: 325px;
+}
+
+.dhome main {
+    position: relative;
+}
+
+.dhome div.bg-img {
+    background: url(../img/show-title-image1.png) center top/cover;
+    height: 28rem;
+    width: 100%;
+    opacity: 0.25;
+    position: absolute;
+    transform: scaleX(-100%);
+}
+
+.dhome div.left-img {
+    background: url(../img/cheers-sign-photo.jpg) no-repeat top/contain;
+    width: 400px;
+    margin: 10px 20px 0;
+    position: relative;
+}
+
+.dhome h2 {
+    font-size: 2.625rem;
+    margin: 12px auto 32px;
+}
+
+.dhome main p:first-of-type, 
+.dabout main p:first-of-type, 
+.dcontact main p, 
+.dcontact main div.location-group a, 
+.contact-form {
+    font-size: 1.5rem;
+    line-height: 32px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dhome main div.flex img {
+    position: relative;
+    width: 290px;
+    margin: 10px 20px;
+}
+
+.dabout div.main-img {
+    background: url(../img/good-beer-with-friends.jpg) center/cover;
+    width: 300px;
+    margin: 0 0 0 20px;
+}
+
+.dabout main div.flex, 
+.dcontact main div.flex {
+    margin: 0 20px;
+}
+
+.dmenu_home main {
+    margin: 0 auto;
+}
+
+.dmenu_home h2 {
+	text-indent: -9999px;
+}
+
+.dmenu_home h2.food-img a, 
+.dmenu_home h2.alcohol-img a {
+    display: block;
+    margin: 50px auto 20px;
+    width: 700px;
+    height: 250px;
+    opacity: 80%;
+    color: #D85904;
+}
+
+.dmenu_home h2.food-img a {
+    background: url(../img/burger-royal-boucherie.jpg) no-repeat 48%/cover;
+    border-radius: 5px;
+}
+
+.dmenu_home h2.alcohol-img a {
+    background: url(../img/bar101-cocktails-504754220-580e83415f9b58564cf470b9.jpg) no-repeat 90%/cover;
+    border-radius: 5px;
+}
+
+.dmenu_home h2.food-img a:hover, 
+.dmenu_home h2.alcohol-img a:hover {
+    opacity: 100%;
+    box-shadow: 5px 5px 10px #000;
+}
+
+ul.sizes li {
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul.sizes li.flex p {
+    line-height: 2rem;
+}
+
+ul.sizes li.flex:nth-child(2) {
+    margin-bottom: 16px;
+}
+
+.container > p {
+    font-size: 0.75rem;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.dfood div.flex, 
+.dalcohol div.flex {
+    gap: 20px;
+}
+
+.appetizer, 
+.salad, 
+.burger, 
+.cocktail, 
+.beer, 
+.wine_white, 
+.wine_red {
+    width: 33.33%;
+    background-color: #F39C29;
+    border-right: solid 10px #F39C29;
+    border-bottom: solid 10px #F39C29;
+    border-left: solid 10px #F39C29;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.appetizer, 
+.cocktail {
+    margin-left: 20px;
+}
+
+.burger, 
+.wine_red {
+    margin-right: 20px;
+}
+
+.appetizer ul, 
+.salad ul, 
+.salad p, 
+.burger ul, 
+.burger p, 
+.cocktail ul, 
+.beer ul, 
+.beer p, 
+.wine_white ul, 
+.wine_red ul {
+    line-height: 1.25rem;
+}
+
+.appetizer ul.flex li.flex p.addition {
+    font-style: italic;
+}
+
+.appetizer ul.flex li.flex p:nth-child(4) {
+    position: relative;
+    top: -1rem;
+    margin: 0 0 8px;
+}
+
+.appetizer ul.flex li.flex p {
+    line-height: 1.25rem;
+    margin: 0 0 24px;
+}
+
+.appetizer ul.flex li.flex, 
+.salad ul.flex li.flex, 
+.burger ul.flex li.flex, 
+.cocktail ul.flex li.flex, 
+.wine_white ul.flex, 
+.wine_red ul.flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.salad ul.flex li.flex ul.sizes li {
+    gap: 60px;
+}
+
+.cocktail ul.flex li.flex p:first-of-type {
+    font-weight: bold;
+}
+
+.cocktail ul.flex li.flex p:nth-child(3), 
+.beer p:first-of-type  {
+    margin: 0 0 16px;
+}
+
+.wine_white ul.flex li.flex {
+    flex-wrap: wrap;
+}
+
+.wine_white ul.flex li.flex ul.sizes li {
+    gap: 35px;
+}
+
+.salad > ul.flex > li.flex:first-of-type, 
+.salad > ul.flex > li.flex:nth-child(2) {
+    margin-top: 24px;
+}
+
+.appetizer ul.flex li.flex p:first-child, 
+.appetizer ul.flex li.flex p:nth-child(2), 
+.salad ul.flex li.flex p:first-child, 
+.salad ul.flex li.flex p:nth-child(2), 
+.burger ul.flex li.flex p:first-child, 
+.burger ul.flex li.flex p:nth-child(2), 
+.wine_white ul.flex li.flex p:first-child, 
+.wine_white ul.flex li.flex p:nth-child(2), 
+.wine_red ul.flex li.flex p:first-child, 
+.wine_red ul.flex li.flex p:nth-child(2) {
+    line-height: 2rem;
+    margin: -6px 0 0;
+    font-weight: bold;
+}
+
+.burger ul.flex li.flex p:first-child, 
+.burger ul.flex li.flex p:nth-child(2) {
+    margin: 16px 0 0;
+}
+
+.disclaimer {
+    text-align: center;
+    font-style: italic;
+    margin: 16px 80px 0;
+}
+
+.drinks_nonalcoholic {
+    width: 85%;
+    margin: 20px auto;
+    background-color: #F39C29;
+    border: solid 10px #F39C29;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.drinks_nonalcoholic ul {
+    justify-content: center;
+}
+
+.drinks_nonalcoholic ul li {
+    margin: 0 35px 0 0;
+    width: 20%;
+    text-align: center;
+}
+
+.beer ul li {
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.nav-local-container {
+    justify-content: flex-start;
+}
+
+.nav-local {
+    font-family: 'Abril Fatface', cursive;
+    line-height: 5rem;
+    text-align: center;
+    margin: 24px auto 0;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #000;
+    animation: seeme linear 1s infinite alternate;
+}
+
+@keyframes seeme {
+    0% {
+        opacity: 25%;
+        color: #F00;
+    }
+    100% {opacity: 100%;}    
+}
+
+.nav-local:hover {
+    color: #A84D0F;
+    animation: none;
+    font-style: normal;
+}
+
+.dcontact main div.flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dcontact main div.flex p, 
+.contact-form, 
+.contact-map, 
+.location {
+    width: 445px;
+}
+
+.location {
+    padding-left: 35px;
+}
+
+.contact-form {
+    position: relative;
+    height: 325px;
+    text-align: center;
+    line-height: 20rem;
+    background:rgba(0, 0, 0, 0.25);
+    border: solid 1px blue;
+}
+
+.contact-map {
+    height: 325px;
+    border: double 3px #000;
+}
+
+/* --------------------------- Main Style End ---------------------------*/
+
+/* --------------------------- Footer Style Start ---------------------------*/
+
+footer {
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 960px;
+    margin: 30px auto 0;
+}
+
+.socialmedia {
+    position: relative;
+    justify-content: center;
+}
+
+.socialmedia a {
+    font-size: 2.5rem;
+    color: #000;
+    margin: 10px 6px;
+}
+
+footer p:last-of-type {
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: italic;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+/* --------------------------- Footer Style End ---------------------------*/

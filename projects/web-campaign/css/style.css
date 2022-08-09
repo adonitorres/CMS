@@ -1,0 +1,1499 @@
+/* ===============
+Global Style Start
+================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+/* Variables */
+:root{
+  /* Colors */
+  --main-bg-color-light: #F3FdFF; /* lighter blue*/
+  --main-bg-color-dark: #00608D; /* darker blue*/
+  --black: #060B0D; /* black */
+  --white: #F4F9FC; /* white */
+  --green-light: #9FDE00; /* light green */
+  --green-dark: #5D8200; /* dark green */
+  --blue-light: #6DD9FC; /* light blue */
+  --blue-dark: #007CB6; /* dark blue */
+  --blue-border-light: #0098DF; /* light blue border */
+  --blue-border-dark: #006797; /* dark blue border */
+  --orange-light: #FDAD00; /* light orange */
+  --orange-dark: #F4930C; /* dark orange */
+
+  /* Font-sizes */
+  --type-sm: clamp(0.75rem, calc(0.13rem + 2.35vw), 2.25rem);
+  --type-md: clamp(1.00rem, calc(0.18rem + 3.14vw), 3.00rem);
+  --type-lg: clamp(1.33rem, calc(0.24rem + 4.18vw), 4.00rem);
+  --type-hg: clamp(1.78rem, calc(0.31rem + 5.57vw), 5.33rem);
+  --type-heading-sm: clamp(2.37rem, calc(0.42rem + 7.43vw), 7.11rem);
+  --type-heading-md: clamp(3.16rem, calc(0.56rem + 9.90vw), 9.47rem);
+  --type-heading-lg: clamp(4.21rem, calc(0.74rem + 13.20vw), 12.63rem);
+}
+/* this keeps padding and border from adding to element width */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+*{
+  color: var(--black);
+}
+html{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ddd;
+}
+body{
+  position: relative;
+  background-color: var(--main-bg-color-light);
+  margin: 0 auto;
+  box-shadow: 6px 6px 10px #00000075;
+}
+h2{
+  font-size: 2.25rem;
+  padding-left: 2rem;
+}
+a{
+  color: var(--white);
+  text-decoration: none;
+  text-underline-position: under;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+span{
+  color: var(--white);
+}
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+/* =============
+Global Style End
+================ */
+/* ===============
+Header Style Start
+================== */
+header{
+  height: 131px;
+}
+.banner{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--main-bg-color-dark);
+  line-height: 2.375rem;
+  padding: 0 1rem;
+  justify-content: space-between;
+  z-index: 10;
+}
+.banner-down{
+  font-size: .8rem;
+  letter-spacing: .3rem;
+  line-height: 1.5rem;
+}
+.banner a{
+  opacity: .5;
+}
+.banner a:hover,
+.banner a:focus{
+  opacity: 1;
+}
+/* Global Nav Bar */
+.navbar{
+  position: fixed;
+  top: 38px;
+  left: 0;
+  background-color: var(--blue-dark);
+  width: 100%;
+  padding: 16px 0 15px 16px;
+  justify-content: space-between;
+  z-index: 10;
+}
+.navbar.other{
+  display: none;
+}
+.navbar-mb-down{
+  top: auto;
+  bottom: 0;
+}
+h1 a{
+  display: block;
+  text-indent: -999rem;
+  background: center / contain no-repeat url(../images/logo_sm.gif);
+  height: 70px;
+  width: 55px;
+  opacity: .85;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+nav.global{
+  width: 100%;
+}
+ul.topnav{
+  justify-content: space-evenly;
+}
+.topnav i{
+  font-size: 3.75rem;
+  color: var(--white);
+  opacity: .85;
+  transition: all .3s ease-in-out;
+}
+h1 a:hover,
+h1 a:focus,
+.topnav i:hover,
+.topnav i:focus,
+.dhome .nhome i,
+.dabout .nabout i,
+.dservices .nservices i,
+.dplumbing .nservices i,
+.dheating .nservices i,
+.dair .nservices i,
+.dplanning .nservices i,
+.dcontact .ncontact i{
+  color: var(--green-light);
+  opacity: 1;
+  text-shadow: 6px 6px 10px #00000075;
+}
+li.nhome h1 a:hover,
+li.nhome h1 a:focus{
+  background: center / contain no-repeat url(../images/logo_sm_active.png);
+  height: 70px;
+  width: 55px;
+  opacity: 1;
+}
+.active a i{
+  color: var(--green-light);
+  opacity: 1;
+  text-shadow: 6px 6px 10px #00000075;
+}
+/* =============
+Header Style End
+================ */
+/* =============
+Main Style Start
+================ */
+main{
+  position: relative;
+  background-color: var(--main-bg-color-light);
+}
+.hero{
+  position: relative;
+  width: 100%;
+  min-height: 96.5vw;
+  box-shadow: 6px 6px 10px #00000035;
+}
+.dhome .hero{
+  background: no-repeat center top / cover url("../images/home-hero-bg-mb.jpg");
+  min-height: 123vw;
+}
+.cta{
+  position: absolute;
+  bottom: 65px;
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: .4rem;
+  text-align: center;
+  line-height: 6rem;
+  color: var(--black);
+  background-color: var(--green-light);
+  opacity: .75;
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+.cta:hover,
+.cta:focus{
+  letter-spacing: .75rem;
+  font-weight: bold;
+  opacity: 1;
+}
+#about{
+  background: no-repeat center top / cover url("../images/home-main-bg1-mb.jpg");
+  height: 150vw;
+  padding: 4rem 2rem;
+  box-shadow: inset 0 0 8px 4px #00000035;
+}
+#about h2{
+  padding-top: 2.5rem;
+}
+#about a:last-of-type{
+  display: block;
+  text-align: right;
+  color: var(--black);
+  opacity: 1;
+  transition: all .1s ease-in-out;
+}
+#about a:last-of-type:hover,
+#about a:last-of-type:focus{
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+p{
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  padding: 2rem;
+}
+#about,
+#services,
+#owner,
+#featured,
+#service-bullets,
+#coupons,
+#quick-links,
+#request-services,
+#testimonials,
+#awards,
+#blog{
+  position: relative;
+  min-height: 720px;
+  padding: 2rem;
+}
+#services{
+  background-color: var(--blue-light);
+  background: no-repeat center top / cover url("../images/home-services-bg-mb.jpg");
+  height: 150vw;
+  padding: 3.5rem 2rem 0;
+}
+#services ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 0;
+}
+#services li{
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--blue-dark);
+  border: solid 2px var(--blue-border-dark);
+  border-radius: 20px;
+}
+#services li a{
+  display: block;
+  background-color: var(--blue-dark);
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 5rem;
+  min-width: 80%;
+  border: solid 1px transparent;
+  border-radius: 20px;
+  opacity: .75;
+  transition: all .3s ease-in-out;
+}
+#services li:hover,
+#services li:focus{
+  border: solid 2px var(--blue-border-light);
+}
+#services li a:hover,
+#services li a:focus{
+  font-size: 2.5rem;
+  color: var(--black);
+  font-weight: bold;
+  opacity: 1;
+  background-color: var(--blue-light);
+  border: solid 1px var(--blue-border-light);
+  box-shadow: 6px 6px 12px #00000075;
+}
+#owner{
+  background: no-repeat center top / cover url("../images/home-main-bg2-mb.jpg");
+  height: 150vw;
+  background-color: var(--blue-light);
+  box-shadow: inset 0 0 8px 4px #00000035;
+}
+#owner h2{
+  padding-left: 2rem;
+  text-indent: 0;
+}
+#owner img{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--blue-light);
+  height: 76vw;
+  width: 76vw;
+  border: solid 20px var(--blue-dark);
+  border-radius: 50%;
+}
+#featured > p{
+  padding: 1rem 2rem;
+}
+#featured > p:nth-of-type(2){
+  padding-bottom: 2rem;
+}
+#featured div{
+  margin: 0 auto;
+  background-color: var(--blue-dark);
+  border-radius: 12px;
+}
+#featured div p span{
+  color: var(--white);
+  opacity: .75;
+}
+#featured div a{
+  font-weight: bold;
+  opacity: 1;
+  transition: all .1s ease-in-out;
+}
+#featured div a:hover,
+#featured div a:focus,
+#featured > p:nth-of-type(3) a:hover,
+#featured > p:nth-of-type(3) a:focus{
+  font-style: italic;
+  text-decoration: underline;
+}
+#featured > p:nth-of-type(3){
+  padding-top: 2rem;
+}
+#featured > p:nth-of-type(3) a{
+  color: var(--black);
+  font-weight: bold;
+  transition: all .1s ease-in-out;
+}
+#service-bullets{
+  background: no-repeat center top / cover url("../images/home-services-provided-bg-mb.jpg");
+  height: 150vw;
+  background-color: var(--blue-dark);
+  padding-top: 20rem;
+  box-shadow: inset 0 0 8px 4px #00000035;
+}
+#service-bullets h2{
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: .1rem;
+  background-color: #00000050;
+  line-height: normal;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 50px;
+}
+#service-bullets > p{
+  background-color: #00000050;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: normal;
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+#service-bullets > p em{
+  color: var(--white);
+  opacity: .5;
+}
+#service-bullets ul{
+  background-color: #00000050;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 12px;
+}
+#service-bullets li:first-of-type{
+  padding: 1rem 0 .75rem;
+}
+#service-bullets li{
+  color: var(--white);
+  list-style: disc;
+  margin-left: 3.5rem;
+  padding: .75rem 2rem .75rem 0;
+}
+#service-bullets li:last-of-type{
+  padding: .75rem 2rem 1rem 0;
+}
+#coupons{
+  position: relative;
+}
+#coupons ul{
+  padding-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+#coupons ul li{
+  text-align: center;
+  background-color: var(--blue-dark);
+  min-height: 60vw;
+  min-width: 64vw;
+  border-radius: 50%;
+}
+#coupons .coupon p{
+  color: var(--white);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin: 0 auto;
+  padding: 2.25rem 1rem 1rem;
+  width: 90%;
+}
+#coupons .coupon a{
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  text-indent: -999rem;
+  background-color: var(--blue-light);
+  background: no-repeat center top / contain url("../images/coupon.gif");
+  height: 27.5vw;
+  width: 27.5vw;
+  border: solid 4px var(--blue-border-light);
+  border-radius: 24px;
+  transition: all .3s ease-in-out;
+}
+#coupons .coupon a:hover,
+#coupons .coupon a:focus{
+  box-shadow: 6px 6px 12px #00000075;
+}
+#quick-links{
+  height: 162vw;
+  background-color: var(--blue-dark);
+  box-shadow: inset 0 0 8px 4px #00000035;
+}
+#quick-links div:first-of-type{
+  background-color: var(--blue-light);
+  padding: 2rem 0 0;
+  width: 100%;
+  -webkit-mask: radial-gradient(circle at 100% 6%, transparent 6%, black 6%);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  transition: all .3s ease-in-out;
+}
+#quick-links ul{
+  padding: 1rem 1rem 2rem 2rem;
+}
+#quick-links li a{
+  color: var(--black);
+  font-size: 1.5rem;
+  line-height: 4rem;
+  transition: all .3s ease-in-out;
+}
+#quick-links li a:hover,
+#quick-links li a:focus{
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#quick-links div:last-of-type{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: no-repeat center top / contain url(../images/home-quick-links-bg-mb.jpg);
+  width: 100%;
+  min-height: 316px;
+}
+/* Start Form Styling */
+#request-services h2{
+  text-indent: -1rem;
+}
+#request-services form div:first-of-type{
+  padding: 2rem 2rem 1rem;
+}
+#request-services form div{
+  position: relative;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+#request-services form div:last-of-type{
+  padding: 1rem 2rem 2rem;
+}
+#request-services form div label{
+  position: absolute;
+  left: -999rem;
+}
+#request-services form div input,
+#request-services form div select,
+  #request-services form div textarea{
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--blue-light);
+  border: solid 4px var(--blue-border-light);
+  border-radius: 8px;
+  font-size: 1.75rem;
+  padding: 1rem;
+  resize: none;
+}
+#request-services form div:nth-of-type(5){
+  position: relative;
+}
+#request-services form div select{
+  font-size: 1rem;
+}
+#request-services form div input:hover,
+#request-services form div input:focus,
+#request-services form div textarea:hover,
+#request-services form div textarea:focus{
+  background-color: var(--blue-dark);
+  border: solid 4px var(--blue-border-dark);
+  color: var(--white);
+}
+#request-services form div input::placeholder,
+#request-services form div textarea::placeholder{
+  color: var(--black);
+}
+#request-services form div input:hover::placeholder,
+#request-services form div input:focus::placeholder,
+#request-services form div textarea:hover::placeholder,
+#request-services form div textarea:focus::placeholder{
+  color: var(--white);
+}
+#request-services form #submit{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 65%;
+  background-color: var(--blue-dark);
+  border: solid 4px var(--blue-border-dark);
+  border-radius: 8px;
+  line-height: 3.5rem;
+  font-size: 1.75rem;
+  color: var(--white);
+  transition: all .3s ease-in-out;
+}
+#request-services form #submit:hover,
+#request-services form #submit:focus{
+  background-color: var(--blue-light);
+  border: solid 4px var(--blue-border-light);
+  color: var(--black);
+  font-weight: bold;
+  box-shadow: 6px 6px 12px #00000075;
+}
+/* Successful Form */
+#success{
+  font-size: 2.25rem;
+  line-height: 5rem;
+  text-align: center;
+}
+div.success{
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  padding: 2rem;
+}
+/* End Form Styling */
+#testimonials{
+  background-color: var(--blue-light);
+  background: no-repeat center top / cover url("../images/home-testimonials-bg-mb.png");
+  box-shadow: inset 0 0 8px 4px #00000025;
+}
+#testimonials h2{
+  color: var(--white);
+  line-height: 4rem;
+  -webkit-mask: radial-gradient(circle at 100% 34%, transparent 8%, black 8%);
+  border-top-left-radius: 12px;
+}
+#testimonials h2,
+#testimonials .testimonial{
+  background-color: #00000075;
+}
+#testimonials .testimonial{
+  padding: 0;
+  padding-bottom: 2rem;
+}
+#testimonials .testimonial:last-of-type{
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 12px;
+}
+#testimonials p{
+  color: var(--white);
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+}
+#testimonials p:last-of-type{
+  text-indent: 1rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+#testimonials div a{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+  background-color: var(--blue-dark);
+  border: solid 4px var(--blue-border-dark);
+  border-radius: 8px;
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+  transition: all .3s ease-in-out;
+}
+#testimonials div a:hover,
+#testimonials div a:focus{
+  background-color: var(--blue-light);
+  border: solid 4px var(--blue-border-light);
+  color: var(--black);
+  font-weight: bold;
+  box-shadow: 6px 6px 12px #00000075;
+}
+#awards ul{
+  margin: 0 auto;
+  padding-top: 3rem;
+  width: 95%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+#awards img{
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  padding: 0 0 1rem 0;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+#awards img:hover,
+#awards img:focus{
+  transform:
+    translateY(-18px) 
+    scale(1.1, 1.1);
+}
+#awards li{
+  position: relative;
+}
+#awards li:first-of-type::after{
+  bottom: -1.5rem;
+  left: -2rem;
+  width: 120%;
+  height: 66px;
+}
+#awards li::after{
+  position: absolute;
+  bottom: 0;
+  left: .75rem;
+  display: block;
+  content: '';
+  width :80%;
+  height: 32px;
+  background: no-repeat center top / cover url("../images/drop-shadow.svg");
+}
+#awards li:nth-of-type(4)::after{
+  width: 120%;
+  height: 56px;
+  bottom: -.5rem;
+  left: -1rem;
+}
+#blog{
+  background-color: var(--blue-dark);
+  box-shadow: inset 0 0 8px 4px #00000035;
+  border-bottom: solid 1px #00000050;
+}
+#blog div:first-of-type{
+  background-color: var(--blue-light);
+  line-height: 3rem;
+  padding: 2rem 2rem 1rem;
+  -webkit-mask: radial-gradient(circle at 100% 2.75%, transparent 3.5%, black 3.5%);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+#blog div:last-of-type{
+  position: relative;
+}
+#blog div:last-of-type h2{
+  color: var(--white);
+  line-height: 3rem;
+  padding-top: 2rem;
+}
+#blog div:last-of-type ul{
+  justify-content: space-around;
+}
+#blog div:last-of-type ul img{
+  display: block;
+  width: 90%;
+  max-width: 250px;
+  border-radius: 12px;
+  opacity: .75;
+  transition: all .3s ease-in-out;
+}
+#blog div:last-of-type ul img:hover,
+#blog div:last-of-type ul img:focus{
+  opacity: 1;
+  box-shadow: 6px 6px 12px #00000075;
+}
+#blog ul{
+  padding: 1rem .5rem 0 1rem;
+}
+#blog div:first-of-type ul li{
+  list-style: disc;
+  margin-left: 2rem;
+}
+#blog ul a{
+  display: block;
+  color: var(--black);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  transition: all .3s ease-in-out;
+}
+#blog ul a:hover,
+#blog ul a:focus{
+  font-style: italic;
+  font-weight: bold;
+}
+/* Next Section Buttons */
+.next-btn,
+.last-btn,
+.top-btn{
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  font-size: 2.5rem;
+  opacity: .4;
+  transition: all .2s ease-in-out;
+}
+#service-bullets .next-btn,
+#service-bullets .next-btn i,
+#quick-links .next-btn,
+#quick-links .next-btn i,
+#testimonials .next-btn,
+#testimonials .next-btn i,
+#blog .last-btn,
+#blog .last-btn i,
+footer .top-btn,
+footer .top-btn i{
+  color: var(--white);
+}
+.next-btn:hover,
+.next-btn:focus,
+.next-btn:hover i,
+.next-btn:focus i,
+.last-btn:hover,
+.last-btn:focus,
+.last-btn:hover i,
+.last-btn:focus i,
+.top-btn:hover,
+.top-btn:focus,
+.top-btn:hover i,
+.top-btn:focus i{
+  opacity: 1;
+}
+/* About Page Styling */
+.dabout .hero{
+  background: no-repeat center top / contain url(../images/about-hero-bg-mb.jpg);
+  min-height: 72.5vw;
+}
+.dabout .hero h2{
+  background-color: #00000075;
+  color: var(--white);
+  line-height: 5rem;
+  padding-left: 1rem;
+}
+.dabout article{
+  background-color: var(--blue-light);
+}
+.dabout article h2{
+  line-height: 6rem;
+}
+.dabout article p{
+  padding-top: 0;
+}
+.dabout main section h2{
+  text-align: center;
+  line-height: 6rem;
+}
+.dabout main ul{
+  flex-direction: column;
+}
+.dabout figure{
+  text-align: center;
+}
+.dabout main img{
+  border: solid 10px var(--blue-border-dark);
+  border-radius: 50%;
+}
+.dabout main figcaption{
+  line-height: 1.5rem;
+  padding: .5rem 0 3rem;
+}
+/* Additional Pages Styling */
+.dplumbing .hero ul,
+.dheating .hero ul,
+.dair .hero ul,
+.dplanning .hero ul{
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 0;
+}
+.dplumbing .hero ul li,
+.dheating .hero ul li,
+.dair .hero ul li,
+.dplanning .hero ul li{
+  width: 25%;
+  text-align: center;
+  padding-top: .5rem;
+  line-height: 2rem;
+  background-color: #00000050;
+}
+.dplumbing .hero ul li:hover,
+.dplumbing .hero ul li:focus,
+.dheating .hero ul li:hover,
+.dheating .hero ul li:focus,
+.dair .hero ul li:hover,
+.dair .hero ul li:focus,
+.dplanning .hero ul li:hover,
+.dplanning .hero ul li:focus{
+  background-color: #00000075;
+}
+.dplumbing .hero ul li.nplumbing,
+.dheating .hero ul li.nheating,
+.dair .hero ul li.nair,
+.dplanning .hero ul li.nplanning{
+  background-color: #00000075;
+  border-left: outset 4px #00000040;
+  border-right: outset 4px #00000040;
+}
+.dplumbing .hero ul li.nplumbing a,
+.dheating .hero ul li.nheating a,
+.dair .hero ul li.nair a,
+.dplanning .hero ul li.nplanning a{
+  color: var(--blue-light);
+}
+.dplumbing .hero ul li:hover a,
+.dplumbing .hero ul li:focus a,
+.dplumbing .hero ul li.nplumbing a,
+.dheating .hero ul li:hover a,
+.dheating .hero ul li:focus a,
+.dheating .hero ul li.nheating a,
+.dair .hero ul li:hover a,
+.dair .hero ul li:focus a,
+.dair .hero ul li.nair a,
+.dplanning .hero ul li:hover a,
+.dplanning .hero ul li:focus a,
+.dplanning .hero ul li.nplanning a{
+  font-weight: bold;
+  font-style: italic;
+  opacity: 1;
+}
+.dplumbing .hero ul a,
+.dheating .hero ul a,
+.dair .hero ul a,
+.dplanning .hero ul a{
+  color: var(--white);
+  opacity: .5;
+}
+.dplumbing .hero h2,
+.dheating .hero h2,
+.dair .hero h2,
+.dplanning .hero h2{
+  background-color: #00000075;
+  color: var(--blue-light);
+  line-height: 5rem;
+  padding-left: 1rem;
+}
+.dplumbing .hero p,
+.dheating .hero p,
+.dair .hero p,
+.dplanning .hero p{
+  position: absolute;
+  bottom: 0;
+  color: var(--white);
+  background-color: #00000050;
+  padding: 1rem 2rem;
+}
+.dplumbing main section ul,
+.dheating main section ul,
+.dair main section ul,
+.dplanning main section ul{
+  padding: 1rem 2rem;
+}
+.dplumbing main section li,
+.dheating main section li,
+.dair main section li,
+.dplanning main section li{
+  list-style: disc;
+  margin-left: 2rem;
+  font-size: 1.25rem;
+  line-height: 4rem;
+}
+.dplumbing main section li:last-of-type,
+.dheating main section li:last-of-type,
+.dair main section li:last-of-type,
+.dplanning main section li:last-of-type{
+  text-align: center;
+  list-style: none;
+}
+.dplumbing main section li a,
+.dheating main section li a,
+.dair main section li a,
+.dplanning main section li a{
+  color: var(--black);
+  transition: all .2s ease-in-out;
+}
+.dplumbing main section li a:hover,
+.dplumbing main section li a:focus,
+.dheating main section li a:hover,
+.dheating main section li a:focus,
+.dair main section li a:hover,
+.dair main section li a:focus,
+.dplanning main section li a:hover,
+.dplanning main section li a:focus{
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+/* Plumbing Services Styling */
+.dplumbing .hero{
+  background: no-repeat center top / contain url(../images/plumbing-hero-mb.jpg);
+}
+/* Heating Services Styling */
+.dheating .hero{
+  background: no-repeat center top / contain url(../images/heating-hero-mb.jpg);
+}
+/* Air Services Styling */
+.dair .hero{
+  background: no-repeat center top / contain url(../images/air-hero-mb.jpg);
+}
+/* Planning Services Styling */
+.dplanning .hero{
+  background: no-repeat center top / contain url(../images/planning-hero-mb.jpg);
+}
+/* 404 Page Styling */
+.d404 .hero{
+  background: no-repeat center top / contain url(../images/404-hero-mb.jpg);
+}
+.d404 .hero h2{
+  background-color: #00000075;
+  color: var(--white);
+  line-height: 3rem;
+  padding: 1.75rem 2rem 1rem;
+  text-align: center;
+}
+.d404 .hero p{
+  background-color: #00000075;
+  color: var(--white);
+  padding: 1rem 2rem 2.5rem;
+}
+/* ===========
+Main Style End
+============== */
+/* ===============
+Footer Style Start
+================== */
+footer{
+  position: relative;
+  background-color: var(--blue-border-dark);
+  padding: 0 0 7rem;
+}
+footer *{
+  transition: all .3s ease-in-out;
+}
+footer .quick-links ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+footer .quick-links ul li{
+  width: 33%;
+  border: solid 1px #007CB650;
+}
+footer .quick-links ul li a{
+  display: block;
+  font-size: .75rem;
+  line-height: 5rem;
+  text-indent: .5rem;
+  height: 5rem;
+  opacity: .75;
+}
+footer .quick-links ul li:not(.nhome:last-of-type) a:hover,
+footer .quick-links ul li:not(.nhome:last-of-type) a:focus{
+  opacity: 1;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #00000025;
+  border: solid 1px var(--blue-border-dark);
+  box-shadow: 6px 6px 12px #00000035;
+}
+footer .quick-links ul li.nhome:last-of-type{
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+footer .quick-links ul li.nhome:last-of-type a{
+  display: block;
+  text-indent: -999rem;
+  background: no-repeat center / contain url(../images/logo-full-sm.gif);
+  width: 75%;
+  min-height: 134px;
+  height: 100%;
+  margin: 1rem auto 0;
+  opacity: 1;
+}
+footer .social{
+  padding: 2rem 0;
+}
+footer .social ul{
+  justify-content: space-evenly;
+}
+footer a,
+footer p{
+  color: var(--white);
+  transition: all .2s ease-in-out;
+}
+footer .social i{
+  color: var(--white);
+  opacity: .75;
+  font-size: 3.5rem;
+}
+footer .social i:hover,
+footer .social i:focus{
+  opacity: 1;
+  text-shadow: 6px 6px 12px #00000075;
+}
+footer .contact{
+  text-align: center;
+}
+footer .contact p{
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: .75;
+  cursor: pointer;
+}
+footer .contact p:hover,
+footer .contact p:focus{
+  opacity: 1;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 6px 6px 12px #00000090;
+}
+footer .utilities{
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+footer .utilities ul{
+  justify-content: space-between;
+  padding: 2rem 0 1rem;
+}
+footer .utilities ul a{
+  opacity: .75;
+}
+footer .utilities ul a:hover,
+footer .utilities ul a:focus{
+  opacity: 1;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 6px 6px 12px #00000090;
+}
+footer div:last-of-type{
+  padding: 1rem 0 2rem;
+}
+footer div:last-of-type p{
+  text-align: center;
+  font-size: .75rem;
+  line-height: normal;
+  padding: 0;
+  opacity: .75;
+}
+/* =============
+Footer Style End
+================ */
+
+/* =============
+Back to Top Button
+================ */
+#btt-btn{
+  box-sizing: content-box;
+  display: none;
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  background-color: var(--blue-border-light);
+  color: var(--white);
+  font-size: 1.5rem;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+  z-index: 100;
+}
+#btt-btn:hover,
+#btt-btn:focus{
+  transform: scale(1.1, 1.1);
+  font-weight: bold;
+  box-shadow: 6px 6px 12px #000000;
+}
+/* ==========
+Media Queries
+============= */
+
+/* Tablet */
+@media only screen and (min-width: 500px) {
+  /* ===============
+  Header Style Start
+  ================== */
+  header{
+    position: relative;
+    height: 118px;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .navbar.mobile{
+    display: none;
+  }
+  .navbar.other{
+    display: block;
+    line-height: 5rem;
+    transition: all .2s ease-in-out;
+  }
+  .navbar-ot-down{
+    position: fixed;
+    top: 24px;
+    background-color: var(--blue-dark);
+  }
+  .navbar.other nav ul{
+    justify-content: center;
+  }
+  .navbar.other nav ul li{
+    width: 18.5%;
+    text-align: center;
+  }
+  .navbar.other nav ul li:nth-of-type(3){
+    width: 26%;
+  }
+  .navbar.other nav h1 a{
+    display: block;
+    background: no-repeat center / contain url(../images/logo-full-sm.gif);
+    width: 100%;
+    height: 100%;
+  }
+  .navbar.other nav h1 a:hover,
+  .navbar.other nav h1 a:focus{
+    background: no-repeat center / contain url(../images/logo-full-sm.gif);
+    background-color: var(--blue-light);
+    width: 100%;
+    height: 100%;
+  }
+  .navbar.other nav li:not(:nth-of-type(3)) a{
+    display: block;
+    font-size: 1.5rem;
+    opacity: .75;
+    height: 100%;
+  }
+  .navbar.other nav li:not(:nth-of-type(3)):hover,
+  .navbar.other nav li:not(:nth-of-type(3)):focus,
+  .navbar.other nav li:not(:nth-of-type(3)) a:hover,
+  .navbar.other nav li:not(:nth-of-type(3)) a:focus,
+  .dhome .nhome:not(:nth-of-type(3)) a,
+  .dabout .nabout a,
+  .dservices .nservices a,
+  .dcontact .ncontact a{
+    opacity: 1;
+    background-color: var(--blue-light);
+    color: var(--black);
+    font-weight: bold;
+  }
+  /* =============
+  Header Style End
+  ================ */
+  /* =============
+  Main Style Start
+  ================ */
+  main{
+    padding: 0;
+    width: 100%;
+  }
+  .dhome .hero{
+    background: no-repeat center top / contain url("../images/home-hero-bg-tb.jpg");
+    min-height: 73.4vw;
+    max-height: 100%;
+  }
+  .dhome .hero .cta{
+    width: 80%;
+    left: 10%;
+    border-radius: 20px;
+  }
+  #about{
+    background: no-repeat center top / cover url("../images/home-main-bg1-tb.jpg");
+    height: 100%;
+  }
+  #about a:last-of-type{
+    text-align: left;
+    text-indent: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    width: 40%;
+    margin: 0 auto;
+    background-color: var(--blue-dark);
+    border: solid 3px var(--blue-border-dark);
+    border-radius: 12px;
+    color: var(--white);
+  }
+  #about a:last-of-type:hover,
+  #about a:last-of-type:focus{
+    box-shadow: 6px 6px 12px #00000050;
+  }
+  #about,
+  #services,
+  #owner,
+  #featured,
+  #service-bullets,
+  #coupons,
+  #quick-links,
+  #request-services,
+  #testimonials,
+  #awards,
+  #blog{
+    min-height: auto;
+    height: auto;
+  }
+  #services{
+    background: no-repeat center top / cover url("../images/home-services-bg-tb.jpg");
+    height: auto;
+  }
+  #services ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  #services li a{
+    font-size: 1.75rem;
+    line-height: 4rem;
+  }
+  #services li a:hover,
+  #services li a:focus{
+    font-size: 1.75rem;
+  }
+  #owner{
+    background: no-repeat center top / cover url("../images/home-main-bg2-tb.jpg");
+    height: auto;
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "b c";
+  }
+  #owner h2{
+    padding-top: 2rem;
+    grid-area: a / span 2;
+  }
+  #owner img{
+    height: 50vw;
+    width: 50vw;
+  }
+  #featured{
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "d d";
+  }
+  #featured h2{
+    padding-top: 2rem;
+    grid-area: a / span 2;
+  }
+  #featured > p{
+    padding: 2rem;
+    font-size: 1.25rem;
+  }
+  #featured > p:nth-of-type(1){
+    padding-right: .75rem;
+  }
+  #featured > p:nth-of-type(2){
+    padding-left: .75rem;
+  }
+  #featured div{
+    grid-area: c / span 2;
+    width: 70%;
+  }
+  #featured > p:nth-of-type(3){
+    grid-area: d / span 2;
+    padding: 2rem 1.2rem 1rem;
+  }
+  #service-bullets{
+    background: no-repeat center top / cover url("../images/home-services-provided-bg-tb.jpg");
+    min-height: 90vw;
+    padding-top: 2rem;
+  }
+  #service-bullets h2{
+    font-size: 2rem;
+  }
+  #service-bullets h2,
+  #service-bullets > p,
+  #service-bullets ul{
+    width: 60%;
+  }
+  #service-bullets > p{
+    padding-top: .5rem;
+  }
+  #service-bullets > p em{
+    opacity: .85;
+  }
+  #service-bullets li:first-of-type{
+    padding: 1rem 1rem 1rem 0;
+  }
+  #service-bullets li:last-of-type{
+    padding: 1rem 1rem 2rem 0;
+  }
+  #coupons ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 3rem;
+  }
+  #coupons ul li{
+    min-height: 40vw;
+    min-width: 40vw;
+  }
+  #coupons .coupon a{
+    height: 20vw;
+    width: 20vw;
+  }
+  #coupons .coupon a:hover,
+  #coupons .coupon a:focus{
+    box-shadow: 6px 6px 12px #00000075;
+  }
+  #quick-links{
+    background-color: var(--blue-dark);
+    box-shadow: inset 0 0 8px 4px #00000035;
+    padding-bottom: 35rem;
+  }
+  #quick-links div:last-of-type{
+    background: no-repeat center top / contain url(../images/home-quick-links-bg-tb.jpg);
+    min-height: 73vw;
+  }
+  #testimonials{
+    background: no-repeat center top / cover url("../images/home-testimonials-bg-tb.jpg");
+  }
+  #testimonials h2,
+  #testimonials .testimonial{
+    background-color: #00000020;
+  }
+  #awards{
+    height: 90vw;
+  }
+  #awards ul{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #awards li:nth-of-type(1){
+    grid-column: 1;
+  }
+  #awards li:nth-of-type(2){
+    grid-column: 2;
+  }
+  #awards li:nth-of-type(3){
+    grid-column: 3;
+  }
+  #awards li:nth-of-type(4){
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #awards li:nth-of-type(5){
+    grid-column: 2;
+    grid-row: 2;
+  }
+  #awards img{
+    width: 100%;
+  }
+  /* About Page Styling */
+  .dabout .hero{
+    background: no-repeat center top / contain url(../images/about-hero-bg-tb.jpg);
+    min-height: auto;
+    height: 32.65vw;
+  }
+  .dabout main section h2{
+    text-align: left;
+  }
+  .dabout main ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .dabout main img{
+    width: 80%;
+  }
+  /* Plumbing Services Styling */
+  .dplumbing .hero{
+    background: no-repeat center top / contain url(../images/plumbing-hero-tb.jpg);
+    min-height: 48.8vw;
+  }
+  /* Heating Services Styling */
+  .dheating .hero{
+    background: no-repeat center top / contain url(../images/heating-hero-tb.jpg);
+    min-height: 48.8vw;
+  }
+  /* Air Services Styling */
+  .dair .hero{
+    background: no-repeat center top / contain url(../images/air-hero-tb.jpg);
+    min-height: 48.8vw;
+  }
+  /* Planning Services Styling */
+  .dplanning .hero{
+    background: no-repeat center top / contain url(../images/planning-hero-tb.jpg);
+    min-height: 48.8vw;
+  }
+  /* 404 Page Styling */
+  .d404 .hero{
+    background: no-repeat center top / contain url(../images/404-hero-tb.jpg);
+    min-height: 48.8vw;
+  }
+  .d404 .hero p{
+    padding: 1rem 2rem 6rem;
+  }
+  /* ===========
+  Main Style End
+  ============== */
+/* ===============
+Footer Style Start
+================== */
+footer{
+  padding: 0 0 1rem;
+  margin: 0 auto;
+}
+footer .quick-links ul{
+  margin: 0 auto;
+}
+footer .quick-links ul li{
+  width: 16%;
+}
+footer .quick-links ul li a{
+  line-height: 3rem;
+  height: auto;
+}
+footer .quick-links ul li:not(.nhome:last-of-type) a:hover,
+footer .quick-links ul li:not(.nhome:last-of-type) a:focus{
+  font-size: .7rem;
+}
+/* =============
+Footer Style End
+================ */
+
+  /* =============
+  Back to Top Button
+  ================ */
+  #btt-btn{
+    bottom: 20px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 800px) {
+  /* ===============
+  Global Style Start
+  ================== */
+  
+
+  /* =============
+  Global Style End
+  ================ */
+  /* ===============
+  Header Style Start
+  ================== */
+  
+
+  /* =============
+  Header Style End
+  ================ */
+  /* =============
+  Main Style Start
+  ================ */
+  
+
+  /* ===========
+  Main Style End
+  ============== */
+  /* ===============
+  Footer Style Start
+  ================== */
+  
+
+  /* =============
+  Footer Style End
+  ================ */
+}
+/* ==
+Fonts
+===== */
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */

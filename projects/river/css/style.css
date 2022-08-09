@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+/* Imports the Google Font 'Open Sans' */
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+/* this keeps padding and border from adding to element width */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url(../images/bodyback.gif);
+  background-repeat: repeat-x;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+#featured {
+  width: 960px;
+  height: 582px;
+  background-image: url(../images/featured_home.jpg);
+}
+
+#dfishing #featured {
+  background-image: url(../images/featured_fishing.jpg);
+}
+
+header {
+  width: 960px;
+  height: 96px;
+  background-color: rgba(101,119,129,.3);
+  justify-content: space-between;
+}
+
+header h1 {
+  /* zombie fish */
+  width: 289px;
+  height: 49px;
+  background-image: url(../images/crlogo.png);
+  text-indent: -9999rem;
+  position: relative;
+  top: 24px;
+  left: 12px;
+}
+
+header h1 a {
+  display: block;
+  height: 49px;
+}
+
+header nav.global {
+  /* navigation bar for header */
+  position: relative;
+  top: 45px;
+  left: -80px;
+}
+
+nav.global ul li {
+  font-family: 'Trebuchet MS';
+  font-size: 14px;
+}
+
+nav.global ul li a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+nav.global ul li a:hover,
+nav.global ul li a:focus,
+nav.global ul li a:active {
+  color: #435F8D;
+  text-decoration: underline;
+}
+
+/* Nav on Page */
+nav.global ul li.current a {
+  color: #435F8D;
+  text-decoration: none;
+}
+
+#featured h2 {
+  /* Lower Colorado River Waterways & Wildlife */
+  font-size: 48px;
+  font-weight: 300;
+  width: 580px;
+  position: relative;
+  top: 30px;
+  left: 86px;
+}
+
+/* Aside */
+aside {
+  width: 310px;
+  padding: 42px 0 55px 70px;
+  background-color: #F2F3F4;
+  border-right: 1px solid #DDDDDE;
+}
+
+aside h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+aside ul {
+  padding: 4px 0 40px 20px;
+  list-style: none;
+}
+
+aside ul li {
+  font-size: 12px;
+  font-family: 'Trebuchet MS';
+  line-height: 24px;
+}
+aside ul li a {
+  color: #369;
+  text-decoration: none;
+
+}
+
+/* Main style */
+main {
+  width: 650px;
+  padding: 36px 10px 50px 20px;
+}
+
+main h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+main p {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #333;
+  padding: 9px 0 20px;
+}
+
+img.thumbs {
+  margin: 10px;
+}
+
+img.postimage {
+  float: left;
+  margin: 10px 5px 15px 0;
+}
+
+main h5 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 12px 0 0 0;
+}
+
+/* Footer style */
+footer {
+  min-height: 308px;
+  background-color: #333;
+  border-top: solid 1px #4E4E4E;
+}
+
+footer div.container.flex {
+  justify-content: space-between;
+}
+
+#footright {
+  width: 650px;
+  text-align: center;
+  color: #FFF;
+}
+
+#icons {
+  padding: 50px 0 48px;
+}
+
+#icons a {
+  margin: 0 4px;
+}
+
+#footright nav.global ul {
+  justify-content: center;
+  padding: 0 0 55px 0;
+}
+
+#footright nav.global ul li a {
+  color: #FFF;
+}
+
+small {
+  font-size: 0.875rem;
+}
+
+#weather {
+  width: 240px;
+  padding: 40px 0 0 40px;
+}
+
+#weather a {
+  height: 20px;
+  display: block;
+  margin: -20px 0 0 0;
+  position: relative;
+  z-index: 1;
+  text-indent: -9999rem;
+}
+
+.test {
+  transform-style: preserve-3d;
+  border: solid 1px red;
+}
+
+  /* ^ causes text wrap^ */
+
+/* font-family: 'Open Sans', sans-serif; */
+/* border: solid 1px red; */
